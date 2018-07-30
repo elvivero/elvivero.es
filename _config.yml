@@ -17,5 +17,5 @@ readme_index:
   enabled:          true
   remove_originals: true
 
-permalink: /projects/:title/
-exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock, _posts/2018-01-01-template.html]
+permalink: /:title/
+exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock, _posts/2018-01-01-template.html, translate-links.txt]
