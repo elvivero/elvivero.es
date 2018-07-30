@@ -2,7 +2,7 @@ title: "El vivero"
 author: "El vivero"
 description: ""
 url: "http://haztecaso.com"
-baseurl: "/elvivero/"
+baseurl: "/elvivero"
 lang: "en"
 
 google_analytics: "UA-16485293-1"
