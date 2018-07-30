@@ -11,11 +11,11 @@ sass:
     sass_dir: _sass
     style: compressed
 
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-readme-index, jekyll-minifier]
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-readme-index]
 
 readme_index:
   enabled:          true
   remove_originals: true
 
 permalink: /projects/:title/
-exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock _posts/2018-01-01-template.html]
+exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock, _posts/2018-01-01-template.html]
