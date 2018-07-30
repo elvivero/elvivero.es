@@ -7,4 +7,3 @@
 - Rehacer responsive vertical
 - Ajustar tamaño escaparate
 - Revisar links internos proyectos
-- Cursor hover escaparate chrome
