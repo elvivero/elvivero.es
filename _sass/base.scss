@@ -265,8 +265,9 @@ html.touch .scroll{ display: none;}
 // Scroll end 
 
 
-@media only screen and (min-width: 1250px){
-	#error404{
-		font-size: 30px;
+@media only screen and (min-heigth: 500px){
+	*{
+		background: black;
 	}
+	
 }
