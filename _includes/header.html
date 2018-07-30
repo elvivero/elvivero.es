@@ -6,11 +6,11 @@ $pageURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 <header class="menu menu-es">
-	<section id="homebutton"><a href="/">El vivero</a></section>
+	<section id="homebutton"><a href="{{ site.baseurl }}/">El vivero</a></section>
 	<section>
     {% include menu_select.html %}
 	</section>
-	<section id="gallery-link"><a href="/">Gallery</a></section>
+	<section id="gallery-link"><a href="{{ site.baseurl }}/">Gallery</a></section>
 	<section id="studio-link"><a href="{{ site.baseurl }}/studio/">Studio</a></section>
   <section id="contact-link"><a onclick="displaycontact()">Contact</a></section>
   <section id="shop-link"><a href="http://www.buendiashop.com/"target="_blank">Shop</a></section>
