@@ -265,14 +265,17 @@ html.touch .scroll{ display: none;}
 // Scroll end 
 
 
-@media screen and (max-height: 650px) {  
+@media screen and (max-height: 690px) {  
 	.content{
-		height: 350px;
+		height: calc(100vh - 160px) !important;
+		min-height: 350px;
 		iframe {
-			height: 350px;
+			height: calc(100vh - 160px);
+			min-height: 350px;
 		}
 		.fix535, img{
-			height: 350px;
+			height: calc(100vh - 160px);
+			min-height: 350px;
 		}
 	}
 }
