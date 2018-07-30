@@ -1,0 +1,22 @@
+<head>
+    {% include analytics.html %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    {% if page.title == "El vivero" %}<title>{{ site.title }}</title>{% else %}<title>{{ site.title }} - {{ page.title }}</title>{% endif %}
+    <link rel="shortcut icon" type="image/png" href="/assets/img/icons/favicon.png"/>
+    <link rel="apple-touch-icon" href="/assets/img/icons/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/css/main.css">
+    {% if page.title == "El vivero" %}
+    <link rel="stylesheet" href="/css/escaparate.css">
+    {% endif %}{% if page.layout == "post_old" %}
+    <link rel="stylesheet" href="/css/post_old.css">
+    {% endif %}
+    <script src="/assets/jquery-3.2.1.min.js"></script>
+    <script src="/assets/scripts.js"></script>
+    {% if page.style %}
+    <style type="text/css">
+     {{ page.style }}
+     </style>
+    {% endif %}
+    {% seo %}
+</head>

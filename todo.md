@@ -1,0 +1,13 @@
+# To do
+- Cambiar los titulos de los proyectos a inglés (Hasta museo marco, terminar...)
+- Actualizar scripts google maps
+- Google analytics (ya configurado, comprobar una vez colgada la web)
+- Rehacer el desplegable (si es posible automatizado)
+- Limpiar css y pasar a SCSS o Sass
+- Rehacer responsive vertical
+- Página 404 <-- Configurar .htaccess
+- Ajustar tamaño escaparate
+- Script jekyll deploy
+- Revisar links internos proyectos
+- ¿Eliminar /projects/ de los links?
+- Cursor hover escaparate chrome

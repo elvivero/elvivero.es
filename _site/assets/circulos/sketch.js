@@ -1,0 +1,1 @@
+function setup(){createCanvas(windowWidth,windowHeight),background(0),frameRate(1e4),noCursor()}function draw(){ellipse(mouseX,mouseY,50,50)}

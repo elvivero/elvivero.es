@@ -1,0 +1,21 @@
+<footer class="footer-post">
+  <h3>
+    <a href="mailto:brendan@twozeroeightthree.com">brendan@twozeroeightthree.com</a>
+  </h3>
+  <ul>
+    {% for post in site.posts %}
+    {% if page.url == post.url %}
+    <li>
+      <a href="{{ post.url | relative_url}}" class="current" >{{ post.title }}</a>
+    </li>
+    {% else %}
+    <li>
+      <a href="{{ post.url | relative_url}}">{{ post.title }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+    <h3>
+    ©&nbsp;Brendan&nbsp;McCormick - all&nbsp;rights&nbsp;reserved&nbsp;{{ site.time | date: '%Y' }}
+  </h3>
+</footer>

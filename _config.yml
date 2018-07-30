@@ -1,0 +1,21 @@
+title: "El vivero"
+author: "El vivero"
+description: ""
+baseurl: "/"
+url: "http://elvivero.es"
+lang: "en"
+
+google_analytics: "UA-16485293-1"
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-readme-index, jekyll-minifier]
+
+readme_index:
+  enabled:          true
+  remove_originals: true
+
+permalink: /projects/:title/
+exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock _posts/2018-01-01-template.html]
