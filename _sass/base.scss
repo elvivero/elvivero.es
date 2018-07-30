@@ -253,21 +253,26 @@ body::-webkit-scrollbar:hover  {
 #leftscroll{
 	left: 10px;
 	visibility: hidden;
-	background: url(/assets/img/icons/left.png);
+	background: url(/elvivero/assets/img/icons/left.png);
 }
 
 #rightscroll{
 	right: 10px;
-	background:url(/assets/img/icons/right.png);
+	background:url(/elvivero/assets/img/icons/right.png);
 }
 
 html.touch .scroll{ display: none;}
 // Scroll end 
 
 
-@media only screen and (min-heigth: 500px){
-	*{
-		background: black;
+@media screen and (max-height: 650px) {  
+	.content{
+		height: 350px;
+		iframe {
+			height: 350px;
+		}
+		.fix535{
+			height: 350px;
+		}
 	}
-	
 }

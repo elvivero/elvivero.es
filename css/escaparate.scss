@@ -1,22 +1,15 @@
 ---
 # Front matter comment to ensure Jekyll properly reads file.
 ---
-.escaparate{
-	background: #884343 !important;
+
+object{
+	height: 535px;
+	position: relative;
+	left: -27px;
 }
 
-#escaparate{
-	-ms-transform-origin: 0 0; /* IE 9 */
-  -webkit-transform-origin: 0 0; /* Chrome, Safari, Opera */
-  transform-origin: 0 0;
-}
-
-area:focus{
-	outline: none !important;
-}
 .description{
 	color: #757575;
-	top:620px;
 	left: 0px;
   a{
 	  color: #757575  !important;
@@ -38,11 +31,6 @@ area:focus{
     animation-direction: alternate;
 }
 
-em{
-	margin-left: 0.1em;
-    font-style: normal;
-}
-
 /* Chrome, Safari, Opera */
 @-webkit-keyframes animation {
     from {color: #757575;}
@@ -53,4 +41,10 @@ em{
 @keyframes animation {
     from {color: #757575;}
     to {color: white;}
+}
+
+@media screen and (max-height: 650px) {  
+	object{
+		height: 350px;
+	}
 }
