@@ -5,11 +5,11 @@
     {% if page.title == "El vivero" %}<title>{{ site.title }}</title>{% else %}<title>{{ site.title }} - {{ page.title }}</title>{% endif %}
     <link rel="shortcut icon" type="image/png" href="{{ site.baseurl }}/assets/img/icons/favicon.png"/>
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/img/icons/apple-touch-icon.png" />
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
     {% if page.title == "El vivero" %}
-    <link rel="stylesheet" href="/css/escaparate.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/escaparate.css">
     {% endif %}{% if page.layout == "post_old" %}
-    <link rel="stylesheet" href="/css/post_old.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/post_old.css">
     {% endif %}
     <script src="{{ site.baseurl }}/assets/jquery-3.2.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/scripts.js"></script>
