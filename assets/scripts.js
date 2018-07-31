@@ -30,7 +30,6 @@ function displaySelector() {
   $( "#selector" ).css( "visibility", "visible" );
   $( "#selector" ).css( "opacity", "1" );
   $( "#back" ).css( "visibility", "visible" );
-  $( "#back" ).css( "opacity", "0.3" );
   $( "#project-link a" ).css( "color", "white" );
   $( "#project-link a" ).css( "background", "black" );
 }
@@ -38,7 +37,6 @@ function hideSelector() {
   $( "#selector" ).css( "visibility", "hidden" );
   $( "#selector" ).css( "opacity", "0" );
   $( "#back" ).css( "visibility", "hidden" );
-  $( "#back" ).css( "opacity", "0" );
   $( "#project-link a" ).css( "color", "black" );
   $( "#project-link a" ).css( "background", "transparent" );
 }

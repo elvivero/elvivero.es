@@ -145,24 +145,23 @@ header{
 #selector{
 	background: white;
 	position: fixed;
-	top:65px;
+	top:55px;
 	left: 100px;
 	width: 240px;
-	height: 300px;
-	padding: 15px;
+	height: 65%;
+	padding: 5px;
 	overflow-y: scroll;
 	-ms-overflow-style: none;  // IE 10+
 	z-index: 200;
-	border: black solid 1px;
 	font-size: 14px;
 	@include transition(opacity 0.5 ease-in-out);
 	li {
 		list-style: none;
 		margin-bottom: 5px;
-		margin-left: 5px;
+		margin-left: 0px;
 	}
 	li.section {
-		margin-top: 15px;
+		margin-top: 20px;
 		margin-bottom: 10px;
 		margin-left: 0px;
 	}
