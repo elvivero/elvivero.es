@@ -1,14 +1,8 @@
-<?php
-function curPageURL() {
-$pageURL = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
- return $pageURL;
-}
-?>
-
 <header class="menu menu-es">
 	<section id="homebutton"><a href="{{ site.baseurl }}/">El vivero</a></section>
-	<section>
-    {% include menu_select.html %}
+	<section id="project-link">
+    <!-- {% include menu_select.html %} -->
+    <a onclick="displaySelector()">Projects</a>
 	</section>
 	<section id="gallery-link"><a href="{{ site.baseurl }}/">Gallery</a></section>
 	<section id="studio-link"><a href="{{ site.baseurl }}/studio/">Studio</a></section>
