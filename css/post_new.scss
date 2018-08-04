@@ -1,0 +1,18 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@media screen and (max-height: 690px) {  
+	.content{
+		height: calc(100vh - 180px) ;
+		min-height: 350px;
+		iframe {
+			height: calc(100vh - 180px);
+			min-height: 350px;
+		}
+		.fix535, img{
+			height: calc(100vh - 180px);
+			min-height: 350px;
+		}
+	}
+}
