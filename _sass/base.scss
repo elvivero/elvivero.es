@@ -144,7 +144,7 @@ header{
 	border: 1px solid rgb(170,170,170);
 	position: fixed;
 	top:65px;
-	left: 100px;
+	left: 95px;
 	width: 240px;
 	height: calc(100% - 95px);
 	padding: 10px;
@@ -189,13 +189,14 @@ header{
 // Contact window 
 #contact{
 	width: 155px;
-	height: 195px;
+	height: 180px;
 	position: fixed;
-	left: 295px;
+	left: 285px;
 	top: 65px;
 	z-index: 16;
 	margin: auto;
-	padding: 20px;
+	padding: 10px;
+	padding-top: 15px;
 	background: white;
 	border: 1px solid rgb(170,170,170);
 	font-size: 13px;
@@ -221,7 +222,7 @@ header{
     height: 15px !important;
   }
   .social{
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .close img{
   	position:absolute;
