@@ -6,22 +6,22 @@
 }
 @media screen and (max-height: 690px) {  
 	.content{
-		height: calc(100vh - 180px) ;
+		height: calc(100vh - 200px) ;
 		min-height: 350px;
 		iframe {
-			height: calc(100vh - 180px);
+			height: calc(100vh - 200px);
 			min-height: 350px;
 		}
 		.fix535, img{
-			height: calc(100vh - 180px);
+			height: calc(100vh - 200px);
 			min-height: 350px;
 		}
 	}
 	.description{
-		top: calc(100vh - 95px);
+		top: calc(100vh - 115px);
 	}
 }
-@media screen and (max-height: 530px) {
+@media screen and (max-height: 550px) {
 	.description{
 		top: 435px;
 	}
