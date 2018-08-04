@@ -58,3 +58,26 @@ $( function() {
     } );
   } );
 } );
+
+function onscroll() {
+  var docwidth = $( document ).width() - $( window ).width();
+  var scroll = $( document ).scrollLeft();
+  var f = $( "#favicon" );
+
+  if ( $( document ).width() > $( window ).width() ) {
+    var n = Math.round( scroll / ( docwidth / 4 ) );
+    f.attr( "href", "/elvivero/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
+  }
+  if ( scroll < 10 ) {
+    $( "#leftscroll" ).css( "visibility", "hidden" );
+  } else {
+    $( "#leftscroll" ).css( "visibility", "visible" );
+  }
+  if ( scroll > docwidth - 10 ) {
+    $( "#rightscroll" ).css( "visibility", "hidden" );
+  } else {
+    $( "#rightscroll" ).css( "visibility", "visible" );
+  }
+}
+
+$( window ).scroll( onscroll );
