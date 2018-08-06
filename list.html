@@ -3,7 +3,7 @@ layout: empty
 title: post list
 style: "
 body{padding:15px; }
-li{ list-style: none;}
+li{ list-style: none; margin-bottom:5px;}
 h1{margin-bottom:20px;}
 ul {
 height: 700px;
@@ -14,4 +14,4 @@ flex-wrap: wrap;
 "
 ---
 <h1>Project list</h1>
-<ul>{% for post in site.posts %}<li><a href="{{ post.url | relative_url}}" class="current" >{{ post.title }}</a></li>{% endfor %}</ul>
+<ul>{% for post in site.posts %}<li><a href="{{ post.url | relative_url}}" class="current" >{{ post.title }} - {{ post.url }}</a></li>{% endfor %}</ul>
