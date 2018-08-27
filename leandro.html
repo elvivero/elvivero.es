@@ -6,7 +6,7 @@ layout: blank
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
     <script type="text/javascript" src="{{ site.baseurl }}/assets/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="{{ site.baseurl }}/assets/leandro.js"></script>
+		<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/leandro.css">
 		<title>Leandro Lattes</title>
 		<script>			
 		function resize(){
@@ -25,9 +25,6 @@ layout: blank
     $(window).resize(resize);
 		$(window).scroll(resize);
 		</script>
-    <style>
-a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup,hr,menu,nav,section{display:block}a,hr{padding:0}b,mark,strong{font-weight:700}*,header{font-family:arial}#changeindex a:hover,header section a:hover{cursor:pointer}#redtext a,.description a,a:hover,header section a:hover{text-decoration:underline}#redtext,footer{text-align:center}.content iframe,.content img,.description h6,header section{display:inline}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}#changeindex,header{top:0;margin:30px 25px 25px;position:fixed}ins,mark{background-color:#ff9;color:#000}body{line-height:1}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:none}a{margin:0;font-size:100%;vertical-align:baseline;background:0 0;color:#000}mark{font-style:italic}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{height:1px;border:0;border-top:1px solid #ccc;margin:1em 0}input,select{vertical-align:middle}*{font-size:13px}header{z-index:10;width:1000px;height:30px}header section{font-size:14px;padding:7px}header section a{color:#000}header section .language a{color:#757575!important}header section .language a:hover{color:#fff!important}#homebutton{padding-left:0;font-size:15px}#changeindex,.content{font-size:14px;font-family:arial}#changeindex{right:0}.content{z-index:0;margin-top:65px;padding:0 25px 20px}.project{height:535px}.content #blankspace{width:25px!important}.content img:last-child{margin-right:25px}.content .fix535{height:535px!important}.content .espacio45{margin-right:45px}.content .espacio35{margin-right:35px}.content .espacio30{margin-right:30px}.content .espacio25{margin-right:25px}.content .espacio15{margin-right:15px}.content .nohover:hover{background:0 0!important;color:#000!important}.description{z-index:10;font-family:arial;font-size:13px;position:fixed;padding-left:25px;width:100%;line-height:1.3}.description h6{font-weight:400;color:green}.description a{color:green}.description a:hover{color:#fff}body,html{max-width:100%;overflow-x:hidden}.content{position:static;white-space:normal;min-height:100%;height:auto!important;height:100%}#redtext{display:block;color:#ce280c;font-size:50px;max-width:1200px;min-width:0;margin-left:auto;margin-right:auto}#redtext a{color:#ce280c}@media only screen and (max-width:900px){#redtext{font-size:40px}}@media only screen and (max-width:570px){#redtext{font-size:25px}}footer{position:absolute;top:1000990px;height:400px;width:100%;z-index:0;margin-bottom:0;background:#ce280c;background:-moz-linear-gradient(top,#fff 0,#ce280c 99%);background:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(99%,#ce280c));background:-webkit-linear-gradient(top,#fff 0,#ce280c 99%);background:-o-linear-gradient(top,#fff 0,#ce280c 99%);background:-ms-linear-gradient(top,#fff 0,#ce280c 99%);background:linear-gradient(to bottom,#fff 0,#ce280c 99%);filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ce280c', GradientType=0 );font-size:14px}footer section{position:absolute;margin-bottom:20px;bottom:0;display:table-cell;width:650px;left:50%;margin-left:-325px;vertical-align:bottom}footer a,footer span{color:#fff;display:inline;padding:7px}@media (max-width:670px){footer a,footer span{display:block;padding:4px}}
-    </style>
 </head>
 <body>
 
@@ -35,8 +32,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 		<div id="freewall">
 	
 	<div class="brick">
-		<a href="project/jazztel">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes23.jpg">
+		<a href="{{ site.baseurl }}/jazztel">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes23.jpg">
 			<div class="textbox"><strong>Jazztel</strong><br>
             	Retailbranding: Franchise design and manual.<br>
 				El vivero 2014
@@ -45,8 +42,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/extremadura-es-cultura">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes21.jpg">
+		<a href="{{ site.baseurl }}/extremadura-es-cultura">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes21.jpg">
 			<div class="textbox"><strong>Gobierno de Extremadura</strong><br>
 				<em>Extremadura es Cultura</em>. Brand design and visual identity exhibition space.<br>Trade fair stand design, Xian, China.<br>
                 El vivero 2013-2014
@@ -55,8 +52,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 
     <div class="brick">
-		<a href="project/netescopio">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes24.jpg">
+		<a href="{{ site.baseurl }}/netescopio">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes24.jpg">
 			<div class="textbox"><strong>AC/E, Acción Cultural Española</strong><br>
 						<em>Netescopio, Net Art archive</em>. Travelling exhibition design. <br>
 						El vivero 2012-2014
@@ -65,8 +62,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div> 
 	
 	<div class="brick">
-		<a href="project/papelera-pitch-in">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes22.jpg">
+		<a href="{{ site.baseurl }}/papelera-pitch-in">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes22.jpg">
 			<div class="textbox"><strong>La Noche en Blanco 2010</strong><br>
 				<em>Pitch-in Paper Basket</em> & public event design.<br>
                 El vivero
@@ -75,8 +72,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/chachi">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes20.jpg">
+		<a href="{{ site.baseurl }}/chachi">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes20.jpg">
 			<div class="textbox"><strong>La Casa Encendida & Basurama</strong><br>
 				<em>Chachi-100% crate</em>. Building game design.<br>
                 El vivero </div>
@@ -84,8 +81,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/camper">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes6.jpg">
+		<a href="{{ site.baseurl }}/camper">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes6.jpg">
 			<div class="textbox"><strong>Camper</strong><br>
 				Retailbranding: Shop design concept;<br />
 				trade fair stands; point of sale and signage. <br>
@@ -94,8 +91,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/museo-marco-stand">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes16.jpg">
+		<a href="{{ site.baseurl }}/museo-marco-stand">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes16.jpg">
 			<div class="textbox"><strong>Marco, Museo de Arte contemporáneo</strong><br>
 					Trade fair stand design at Arco Contemporary Art Fair. <br>
 					El vivero
@@ -104,8 +101,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/idealista">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes8.jpg">
+		<a href="{{ site.baseurl }}/idealista">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes8.jpg">
 			<div class="textbox"><strong>Idealista.com </strong><br>
 				Trade fair stands design.<br>
 				Agency:  Wollf Olins + El vivero 
@@ -114,8 +111,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/bnp">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes9.jpg">
+		<a href="{{ site.baseurl }}/bnp">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes9.jpg">
 			<div class="textbox"><strong>BNP Paribas Bank</strong><br>
 				Interior design.<br>
 				Agency:  Wollf Olins 
@@ -124,8 +121,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
 	<div class="brick">
-		<a href="project/optimus">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes11.jpg">
+		<a href="{{ site.baseurl }}/optimus">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes11.jpg">
 			<div class="textbox"><strong>Optimus </strong><br>
 				Retailbranding: Shop design concept.<br>
 				Agency: Wollf Olins 
@@ -134,8 +131,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>    
     
     <div class="brick">
-		<a href="project/grupo-santillana">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes18.jpg">
+		<a href="{{ site.baseurl }}/grupo-santillana">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes18.jpg">
 			<div class="textbox"><strong>Grupo Santillana</strong><br>
 				Headquarters signage and wayfinding.<br>
                 Agency: OMB 
@@ -146,8 +143,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	
 	
 	    <div class="brick">
-		<a href="project/ono">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes12.jpg">
+		<a href="{{ site.baseurl }}/ono">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes12.jpg">
 			<div class="textbox"><strong>Ono</strong><br>
 				Flagship store design.<br>
                 Agency:  Wollf Olins 
@@ -164,8 +161,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
     
     
 	<div class="brick">
-		<a href="project/madritel">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes13.jpg">
+		<a href="{{ site.baseurl }}/madritel">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes13.jpg">
 			<div class="textbox"><strong>Madritel</strong><br>
 				<em>La Casa de las palabras.</em> Exhibition design at Madrid’s book fair.<br>
 				Agency:  Wollf Olins
@@ -174,8 +171,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
 	<div class="brick">
-		<a href="project/r">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes15.jpg">
+		<a href="{{ site.baseurl }}/r">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes15.jpg">
 			<div class="textbox"><strong>R internet-telefonía-televisión</strong><br>
 				Trade fair stands design.<br>
 				Agency:  Wollf Olins
@@ -184,8 +181,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
 	<div class="brick">
-		<a href="project/union-fenosa">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes5.jpg">
+		<a href="{{ site.baseurl }}/union-fenosa">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes5.jpg">
 			<div class="textbox"><strong>Unión Fenosa</strong><br>
 				Retailbranding: Shop design concept. <br>
 				Agency: Wollf Olins </div>
@@ -193,8 +190,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/madrid-km.0">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes10.jpg">
+		<a href="{{ site.baseurl }}/madrid-km.0">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes10.jpg">
 			<div class="textbox"><strong>Madrid km 0</strong><br>
         Exhibition design.<br>
         Agency:  Wollf Olins 
@@ -203,8 +200,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
 	<div class="brick">
-		<a href="project/barnasud">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes2.jpg">
+		<a href="{{ site.baseurl }}/barnasud">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes2.jpg">
 			<div class="textbox"><strong>Centro comercial Barnasud</strong><br>
 				Shopping center signage & wayfinding design.<br> 
 				Agency: Addison 
@@ -213,8 +210,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
     <div class="brick">
-		<a href="project/argentaria">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes3.jpg">
+		<a href="{{ site.baseurl }}/argentaria">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes3.jpg">
 			<div class="textbox"><strong>Argentaria, Corporate & Investment Banking</strong><br>
 				Interior design concept.  <br>
                 Agency: John Ryan Company </div>
@@ -222,8 +219,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
    
     <div class="brick">
-		<a href="project/deutsche-bank">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes4.jpg">
+		<a href="{{ site.baseurl }}/deutsche-bank">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes4.jpg">
 			<div class="textbox"><strong>Deutsche Bank</strong><br>
 			<em>Bankingshop</em> design concept. <br>
 		Agency: John Ryan Company</div>
@@ -231,8 +228,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
     <div class="brick">
-		<a href="project/metro-bilbao">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes.jpg">
+		<a href="{{ site.baseurl }}/metro-bilbao">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes.jpg">
 			<div class="textbox"><strong>Metro de Bilbao</strong>
             <br>Train design.<br>
 				Agency: Addison
@@ -241,8 +238,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
     
     <div class="brick">
-		<a href="project/luminaria-basica">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes7.jpg">
+		<a href="{{ site.baseurl }}/luminaria-basica">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes7.jpg">
 			<div class="textbox"><strong>Luminaria Básica</strong><br>
             	Lighting collection design.<br>
                 El vivero
@@ -251,8 +248,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
     <div class="brick">
-		<a href="project/pixelware">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes14.jpg">
+		<a href="{{ site.baseurl }}/pixelware">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes14.jpg">
 			<div class="textbox"><strong>PixelWare</strong><br>
 				Trade Fair Stands.<br>
 				El vivero
@@ -261,8 +258,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
     <div class="brick">
-		<a href="project/trofeos">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes17.jpg">
+		<a href="{{ site.baseurl }}/trofeos">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes17.jpg">
 			<div class="textbox"><strong>Fundación Autor</strong><br>
 				Trophie design: Julio Alejandro Script Prize. <br>
 				El vivero<br />
@@ -271,8 +268,8 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	
     <div class="brick">
-		<a href="project/repsol">
-			<img width="100%" src="http://elvivero.es/leandro/escaparate/images/leandro-lattes19.jpg">
+		<a href="{{ site.baseurl }}/repsol">
+			<img width="100%" src="{% include image_path.html %}/leandro/leandro-lattes19.jpg">
 			<div class="textbox"><strong>Repsol</strong><br>
 				Headquarters exterior signage.<br>
 				Agency: GTE
@@ -281,19 +278,6 @@ a,ins{text-decoration:none}article,aside,details,figcaption,figure,header,hgroup
 	</div>
 	</div>
 		</div>
-		
-		
-	<footer>
-		<section>
-		<a href="<?php print $base_url."about/";?>">About</a>
-		<a href="mailto:leandro@elvivero.es">Email</a>
-		<span>T +34 619 375 200</span>
-		<a href="https://es.linkedin.com/in/leandrolattes" target="_blank">Linkedin</a>
-		<a href="http://elvivero.es" target="_blank">El vivero</a>
-		<a href="http://www.buendiashop.com" target="_blank">Buen Día Shop</a>
-		</section>
-	</footer>
-		
 		<script type="text/javascript">
 			var wall = new freewall("#freewall");
 			wall.reset({
