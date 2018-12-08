@@ -1,4 +1,4 @@
-$black : #000;
+$black : #00f;
 $font : Arial;
 
 @mixin transition($property){
@@ -7,4 +7,3 @@ $font : Arial;
   -o-transition: $property;
   transition: $property;
 }
-
