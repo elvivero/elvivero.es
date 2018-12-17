@@ -66,7 +66,7 @@ function onscroll() {
 
   if ( $( document ).width() > $( window ).width() ) {
     var n = Math.round( scroll / ( docwidth / 4 ) );
-    f.attr( "href", "/elvivero/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
+    f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
   }
   if ( scroll < 10 ) {
     $( "#leftscroll" ).css( "visibility", "hidden" );
