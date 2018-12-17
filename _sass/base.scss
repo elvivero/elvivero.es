@@ -1,6 +1,6 @@
 @import "variables"; // import general variables
 
-/* 
+/*
 Base styles
 */
 
@@ -13,7 +13,7 @@ Base styles
 body{
 	overflow-y: hidden;
 }
-a{ 
+a{
   color: black;
   }
 a:hover{
@@ -47,7 +47,7 @@ header{
     	cursor: pointer;
 	    background: #000000;
 	    text-decoration: none;
-    
+
     }
   }
   select{
@@ -62,9 +62,9 @@ header{
 	padding-left: 0px;
 	font-size:15px;
 }
-// Menu end 
+// Menu end
 
-// Content 
+// Content
 .content{
 	z-index: 0;
 	margin-top: 65px;
@@ -84,14 +84,14 @@ header{
   img:last-child{
 	  margin-right: 25px !important;
   }
-	
-  .fix350{ 
+
+  .fix350{
     height: 350px;
   }
   .fix535{
     height: 535px;
   }
-	
+
   .espacio45{ margin-right: 45px; }
 	.espacio40{ margin-right: 40px; }
   .espacio35{ margin-right: 35px; }
@@ -100,7 +100,7 @@ header{
 	.espacio20{ margin-right: 20px; }
   .espacio15{ margin-right: 15px; }
 	.espacio10{ margin-right: 10px; }
-	
+
   .nohover:hover{
     background: transparent !important;
     color: black !important;
@@ -111,10 +111,10 @@ header{
   width: 25px; display: inline
 }
 
-// Content end 
+// Content end
 
 
-// Description 
+// Description
 .description{
 	z-index: 10;
 	font-family: arial;
@@ -136,7 +136,7 @@ header{
   	color:#ffffff;
 	}
 }
-// Description end 
+// Description end
 
 // Project selector
 
@@ -173,7 +173,7 @@ header{
 	li:last-child{
 		margin-bottom: 15px;
 	}
-	
+
 	hr{
 		border: 0;
 		height: 1px;
@@ -187,7 +187,7 @@ header{
 #selector::-webkit-scrollbar-thumb {
   background-color: rgb(170,170,170);
 }
-// Contact window 
+// Contact window
 #contact{
 	width: 155px;
 	height: 180px;
@@ -217,7 +217,7 @@ header{
   .icon:hover{
   	background: transparent !important;
   }
-  span a img { 
+  span a img {
     margin-right: 3px !important;
     width: 15px !important;
     height: 15px !important;
@@ -253,9 +253,9 @@ header{
 	opacity: 0;
   @include transition(opacity 0.5 ease-in-out);
 }
-// Contact end 
+// Contact end
 
-// Cookies 
+// Cookies
 #barraaceptacion{
 	z-index: 5;
 	font-size: 13px;
@@ -266,7 +266,7 @@ header{
 	font-family: arial !important;
 }
 
-// Scroll 
+// Scroll
 body::-webkit-scrollbar {
     width: 1em;
 		background: transparent;
@@ -301,13 +301,13 @@ body::-webkit-scrollbar:hover  {
 #leftscroll{
 	left: 10px;
 	visibility: hidden;
-	background: url(/elvivero/assets/img/icons/left.png);
+	background: url(/assets/img/icons/left.png);
 }
 
 #rightscroll{
 	right: 10px;
-	background:url(/elvivero/assets/img/icons/right.png);
+	background:url(/assets/img/icons/right.png);
 }
 
 html.touch .scroll{ display: none;}
-// Scroll end 
+// Scroll end
