@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+{% assign month = site.time | date: '%m' %}{% if month == "12" %}{% assign year = site.time | date: '%Y' | plus: 1 %}{% else %}{% assign year = site.time | date: '%Y' %}{% endif %}
 <div id="content" class="content">
 {% include escaparate.html %}
 <div id="leftscroll" class="scroll" onclick='hidecontact()'></div>
 <div id="rightscroll" class="scroll" onclick='hidecontact()'></div>
 </div>
 <div id="description" class="description">
-  © El vivero <span style="font-size: 12px">2004–{{ site.time | date: '%Y'}}.</span>
-  <span id="tenyears">{{ site.time | date: '%Y' | minus: 2004}} years!</span>
+  © El vivero <span style="font-size: 12px">2004–{{ year }}.</span>
+  <span id="tenyears">{{ year | minus: 2004}} years!</span>
 </div>
