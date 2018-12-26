@@ -1,19 +1,19 @@
 /* Contact */
 function displaycontact() {
-  $( "#contact" ).css( "visibility", "visible" );
-  $( "#contact" ).css( "opacity", "1" );
-  $( "#back" ).css( "visibility", "visible" );
-  $( "#map-canvas" ).css( "display", "block" );
-  $( "#contact-link a" ).css( "color", "white" );
-  $( "#contact-link a" ).css( "background", "black" );
+  $( "#contact" ).css( "visibility", "visible");
+  $( "#contact" ).css( "opacity", "1");
+  $( "#back" ).css( "visibility", "visible");
+  $( "#map-canvas" ).css( "display", "block");
+  $( "#contact-link a" ).css( "color", "white");
+  $( "#contact-link a" ).css( "background", "black");
 }
 function hidecontact() {
-  $( "#contact" ).css( "visibility", "hidden" );
-  $( "#contact" ).css( "opacity", "0" );
-  $( "#back" ).css( "visibility", "hidden" );
-  $( "#map-canvas" ).css( "display", "none" );
-  $( "#contact-link a" ).css( "color", "black" );
-  $( "#contact-link a" ).css( "background", "transparent" );
+  $( "#contact" ).css( "visibility", "hidden");
+  $( "#contact" ).css( "opacity", "0");
+  $( "#back" ).css( "visibility", "hidden");
+  $( "#map-canvas" ).css( "display", "none");
+  $( "#contact-link a" ).css( "color", "black");
+  $( "#contact-link a" ).css( "background", "transparent");
 }
 
 /* Select Menu */
@@ -82,6 +82,10 @@ switch(e.which) {
 e.preventDefault(); // prevent the default action (scroll / move caret)
 });
 
+function isTouchDevice() {
+    return 'ontouchstart' in document.documentElement;
+}
+
 function onscroll() {
   var docwidth = $( document ).width() - $( window ).width();
   var scroll = $( document ).scrollLeft();
@@ -91,12 +95,12 @@ function onscroll() {
     var n = Math.round( scroll / ( docwidth / 4 ) );
     f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
   }
-  if ( scroll < 100 ) {
+  if ( scroll < 100 || isTouchDevice()) {
     $( "#leftscroll" ).css( "visibility", "hidden" );
   } else {
     $( "#leftscroll" ).css( "visibility", "visible" );
   }
-  if ( scroll > docwidth - 100 ) {
+  if ( scroll > docwidth - 100 || isTouchDevice()) {
     $( "#rightscroll" ).css( "visibility", "hidden" );
   } else {
     $( "#rightscroll" ).css( "visibility", "visible" );

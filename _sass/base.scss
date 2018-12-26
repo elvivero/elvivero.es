@@ -49,7 +49,6 @@ header{
     	cursor: pointer;
 	    background: #000000;
 	    text-decoration: none;
-
     }
   }
   select{
@@ -285,7 +284,7 @@ body::-webkit-scrollbar:hover  {
 
 .scroll{
 	position: fixed;
-	top:309px;
+	top: 309px;
 	width: 60px;
 	height: 43px;
 	z-index: 15;
