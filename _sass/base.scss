@@ -9,7 +9,9 @@ Base styles
 	font-family: $font;
 	outline: none;
 }
-*:active
+html {
+  scroll-behavior: smooth;
+}
 body{
 	overflow-y: hidden;
 }
@@ -283,11 +285,12 @@ body::-webkit-scrollbar:hover  {
 
 .scroll{
 	position: fixed;
-	top:65px;
-	width: 50px;
-	height: 30px;
+	top:309px;
+	width: 60px;
+	height: 43px;
 	z-index: 15;
 	visibility: hidden;
+	background-color: red;
 }
 
 .scroll:hover{
@@ -300,13 +303,12 @@ body::-webkit-scrollbar:hover  {
 
 #leftscroll{
 	left: 10px;
-	visibility: hidden;
-	background: url(/assets/img/icons/left.png);
+	background: url(/assets/img/icons/left.svg);
 }
 
 #rightscroll{
 	right: 10px;
-	background:url(/assets/img/icons/right.png);
+	background:url(/assets/img/icons/right.svg);
 }
 
 html.touch .scroll{ display: none;}

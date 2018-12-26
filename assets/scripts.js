@@ -25,7 +25,6 @@ function SelectRedirect() {
     window.location = selectedValue;
   }
 }
-
 function displaySelector() {
   $( "#selector" ).css( "visibility", "visible" );
   $( "#selector" ).css( "opacity", "1" );
@@ -59,6 +58,30 @@ $( function() {
   } );
 } );
 
+// Arrows scroll control
+function xscroll(dir){
+  let amount;
+  if(dir=="left"){
+    amount = -$(window).width()+200;
+  }
+  else if (dir=="right") {
+    amount = $(window).width()-200;
+  }
+  $('html, body').animate({scrollLeft: $('html, body').scrollLeft() + amount}, 80);
+}
+
+$(document).keydown(function(e) {
+switch(e.which) {
+    case 37:
+      xscroll("left");
+    break;
+    case 39:
+      xscroll("right");
+    break;
+}
+e.preventDefault(); // prevent the default action (scroll / move caret)
+});
+
 function onscroll() {
   var docwidth = $( document ).width() - $( window ).width();
   var scroll = $( document ).scrollLeft();
@@ -68,12 +91,12 @@ function onscroll() {
     var n = Math.round( scroll / ( docwidth / 4 ) );
     f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
   }
-  if ( scroll < 10 ) {
+  if ( scroll < 100 ) {
     $( "#leftscroll" ).css( "visibility", "hidden" );
   } else {
     $( "#leftscroll" ).css( "visibility", "visible" );
   }
-  if ( scroll > docwidth - 10 ) {
+  if ( scroll > docwidth - 100 ) {
     $( "#rightscroll" ).css( "visibility", "hidden" );
   } else {
     $( "#rightscroll" ).css( "visibility", "visible" );
