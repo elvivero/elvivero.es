@@ -67,7 +67,7 @@ function xscroll(dir){
   else if (dir=="right") {
     amount = $(window).width()-200;
   }
-  $('html, body').animate({scrollLeft: $('html, body').scrollLeft() + amount}, 80);
+  $('body').animate({scrollLeft: $('body').scrollLeft() + amount}, 200);
 }
 
 $(document).keydown(function(e) {
@@ -88,23 +88,31 @@ function isTouchDevice() {
 
 function onscroll() {
   var docwidth = $( document ).width() - $( window ).width();
-  var scroll = $( document ).scrollLeft();
+  var scroll = $( "body" ).scrollLeft();
+  console.log(scroll);
   var f = $( "#favicon" );
 
   if ( $( document ).width() > $( window ).width() ) {
     var n = Math.round( scroll / ( docwidth / 4 ) );
     f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
   }
-  if ( scroll < 100 || isTouchDevice()) {
+  if (isTouchDevice()){
     $( "#leftscroll" ).css( "visibility", "hidden" );
-  } else {
-    $( "#leftscroll" ).css( "visibility", "visible" );
-  }
-  if ( scroll > docwidth - 100 || isTouchDevice()) {
     $( "#rightscroll" ).css( "visibility", "hidden" );
-  } else {
-    $( "#rightscroll" ).css( "visibility", "visible" );
+  }
+  else {
+    if ( scroll < 100) {
+      $( "#leftscroll" ).css( "visibility", "hidden" );
+    } else {
+      $( "#leftscroll" ).css( "visibility", "visible" );
+    }
+    if ( scroll > docwidth - 100) {
+      $( "#rightscroll" ).css( "visibility", "hidden" );
+    } else {
+      $( "#rightscroll" ).css( "visibility", "visible" );
+    }
   }
 }
 
 $( window ).scroll( onscroll );
+setInterval(onscroll, 250);

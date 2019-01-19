@@ -5,7 +5,7 @@ url: "http://haztecaso.com"
 baseurl: ""
 lang: "en"
 
-google_analytics: "UA-16485293-1"
+google_analytics: "UA-132768107-1"
 
 sass:
     sass_dir: _sass
