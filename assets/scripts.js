@@ -67,7 +67,12 @@ function xscroll(dir){
   else if (dir=="right") {
     amount = $(window).width()-200;
   }
-  $('body').animate({scrollLeft: $('body').scrollLeft() + amount}, 200);
+  var scrollNode = document.scrollingElement || document.documentElement;
+  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+    $(scrollNode).animate({scrollLeft: $(document).scrollLeft() + amount}, 400);
+  } else{
+    $(scrollNode).animate({scrollLeft: $('body').scrollLeft() + amount}, 400);
+  }
 }
 
 $(document).keydown(function(e) {
@@ -89,7 +94,9 @@ function isTouchDevice() {
 function onscroll() {
   var docwidth = $( document ).width() - $( window ).width();
   var scroll = $( "body" ).scrollLeft();
-  console.log(scroll);
+  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
+    scroll = $(document).scrollLeft();
+  }
   var f = $( "#favicon" );
 
   if ( $( document ).width() > $( window ).width() ) {
