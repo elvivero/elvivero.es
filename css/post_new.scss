@@ -20,6 +20,15 @@
 	.description{
 		top: calc(100vh - 115px);
 	}
+  .scroll{
+  	position: fixed;
+  	top: calc(50vh- 200px);
+  	width: 60px;
+  	height: 43px;
+  	z-index: 15;
+  	visibility: hidden;
+  	background-color: red;
+  }
 }
 @media screen and (max-height: 550px) {
 	.description{

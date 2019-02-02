@@ -60,19 +60,17 @@ $( function() {
 
 // Arrows scroll control
 function xscroll(dir){
-  let amount;
+  let inst = $("body").overlayScrollbars();
+  let delta = 200;
   if(dir=="left"){
-    amount = -$(window).width()+200;
+    amount = -$(window).width()+delta;
   }
   else if (dir=="right") {
-    amount = $(window).width()-200;
+    amount = $(window).width()-delta;
   }
-  var scrollNode = document.scrollingElement || document.documentElement;
-  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
-    $(scrollNode).animate({scrollLeft: $(document).scrollLeft() + amount}, 400);
-  } else{
-    $(scrollNode).animate({scrollLeft: $('body').scrollLeft() + amount}, 400);
-  }
+  let end = inst.scroll().x.position + amount;
+  inst.scroll({x: end}, 400);
+
 }
 
 $(document).keydown(function(e) {
@@ -91,18 +89,7 @@ function isTouchDevice() {
     return 'ontouchstart' in document.documentElement;
 }
 
-function onscroll() {
-  var docwidth = $( document ).width() - $( window ).width();
-  var scroll = $( "body" ).scrollLeft();
-  if(/chrom(e|ium)/.test(navigator.userAgent.toLowerCase())){
-    scroll = $(document).scrollLeft();
-  }
-  var f = $( "#favicon" );
-
-  if ( $( document ).width() > $( window ).width() ) {
-    var n = Math.round( scroll / ( docwidth / 4 ) );
-    f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
-  }
+function update_arrows(scroll,docwidth) {
   if (isTouchDevice()){
     $( "#leftscroll" ).css( "visibility", "hidden" );
     $( "#rightscroll" ).css( "visibility", "hidden" );
@@ -121,5 +108,30 @@ function onscroll() {
   }
 }
 
+function onscroll() {
+  let inst = $("body").overlayScrollbars();
+  let scroll = inst.scroll().x.position;
+  let docwidth = inst.scroll().x.max;
+  update_arrows(scroll, docwidth);
+
+  let f = $( "#favicon" );
+  if ( $( document ).width() > $( window ).width() ) {
+    var n = Math.round( scroll / ( docwidth / 4 ) );
+    f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
+  }
+
+}
+
 $( window ).scroll( onscroll );
 setInterval(onscroll, 250);
+
+$(function() {
+  $("body").overlayScrollbars({
+    overflowBehavior : {
+                x : "scroll",
+                y : "hidden"
+              }
+  });
+  $("#selector").overlayScrollbars({});
+});
+
