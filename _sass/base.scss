@@ -74,7 +74,8 @@ header{
 // Content
 .content{
 	z-index: 0;
-	margin-top: 65px;
+  position:relative;
+	top: 65px;
 	font-family: arial;
 	height:535px;
 	padding: 25px;
@@ -151,10 +152,10 @@ header{
 	background: white;
 	border: 1px solid rgb(170,170,170);
 	position: fixed;
-	top:60px;
-	left: 95px;
+	top: 60px;
+	left: -500px;
 	width: 240px;
-	height: calc(100% - 95px);
+	height: calc(100% - 105px);
 	padding: 10px;
 	padding-top: 15px;
 	overflow-y: scroll;
@@ -193,7 +194,7 @@ header{
 	height: 180px;
 	position: fixed;
 	left: 233px;
-	top: 60px;
+	top: -500px;
 	z-index: 16;
 	margin: auto;
 	padding: 10px;
@@ -202,8 +203,6 @@ header{
 	border: 1px solid rgb(170,170,170);
 	font-size: 13px;
 	line-height: 1.3em;
-	opacity: 0;
-	visibility: hidden;
   @include transition(opacity 0.5 ease-in-out);
   a:hover{
     cursor:pointer;
@@ -227,8 +226,6 @@ header{
   }
   .close img{
   	position:absolute;
-	  background-position: center center;
-	  background-size: contain;
 	  width: 20px;
 	  height: 20px;
 	  margin-right: 0px !important;
@@ -270,7 +267,8 @@ header{
 
 .scroll{
 	position: fixed;
-	top: 309px;
+	/*top: 309px;*/
+	top: -500px;
 	width: 60px;
 	height: 43px;
 	z-index: 15;

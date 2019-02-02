@@ -1,17 +1,10 @@
 /* Contact */
 function displaycontact() {
-  $( "#contact" ).css( "visibility", "visible");
-  $( "#contact" ).css( "opacity", "1");
+  $( "#contact" ).css("top","60px");
   $( "#back" ).css( "visibility", "visible");
-  $( "#map-canvas" ).css( "display", "block");
-  $( "#contact-link a" ).css( "color", "white");
-  $( "#contact-link a" ).css( "background", "black");
 }
 function hidecontact() {
-  $( "#contact" ).css( "visibility", "hidden");
-  $( "#contact" ).css( "opacity", "0");
-  $( "#back" ).css( "visibility", "hidden");
-  $( "#map-canvas" ).css( "display", "none");
+  $( "#contact" ).css("top","-500px");
   $( "#contact-link a" ).css( "color", "black");
   $( "#contact-link a" ).css( "background", "transparent");
 }
@@ -26,18 +19,12 @@ function SelectRedirect() {
   }
 }
 function displaySelector() {
-  $( "#selector" ).css( "visibility", "visible" );
-  $( "#selector" ).css( "opacity", "1" );
+  $( "#selector" ).css( "left", "95px" );
   $( "#back" ).css( "visibility", "visible" );
-  $( "#project-link a" ).css( "color", "white" );
-  $( "#project-link a" ).css( "background", "black" );
 }
 function hideSelector() {
-  $( "#selector" ).css( "visibility", "hidden" );
-  $( "#selector" ).css( "opacity", "0" );
+  $( "#selector" ).css( "left", "-500px" );
   $( "#back" ).css( "visibility", "hidden" );
-  $( "#project-link a" ).css( "color", "black" );
-  $( "#project-link a" ).css( "background", "transparent" );
 }
 
 // No drag!
@@ -108,17 +95,30 @@ function update_arrows(scroll,docwidth) {
   }
 }
 
-function onscroll() {
-  let inst = $("body").overlayScrollbars();
-  let scroll = inst.scroll().x.position;
-  let docwidth = inst.scroll().x.max;
-  update_arrows(scroll, docwidth);
+function arrows_position(){
+    let content = $(".content").height();
+    let scroll_height = 43;
+    let position = content/2 + 65 - scroll_height/2;
+    console.log(position);
+    $(".scroll").css("top",position+"px");
 
+}
+
+function update_favicon(scroll, docwidth){
   let f = $( "#favicon" );
   if ( $( document ).width() > $( window ).width() ) {
     var n = Math.round( scroll / ( docwidth / 4 ) );
     f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
   }
+}
+
+function onscroll() {
+  let inst = $("body").overlayScrollbars();
+  let scroll = inst.scroll().x.position;
+  let docwidth = inst.scroll().x.max;
+  update_arrows(scroll, docwidth);
+  arrows_position();
+  update_favicon(scroll, docwidth);
 
 }
 
@@ -129,7 +129,7 @@ $(function() {
   $("body").overlayScrollbars({
     overflowBehavior : {
                 x : "scroll",
-                y : "hidden"
+                y : "scroll"
               }
   });
   $("#selector").overlayScrollbars({});
