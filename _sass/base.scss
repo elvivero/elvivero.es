@@ -181,12 +181,14 @@ header{
 	li:last-child{
 		margin-bottom: 15px;
 	}
-
 	hr{
 		border: 0;
 		height: 1px;
 		background: black;
 	}
+  .os-scrollbar-handle{
+    background: rgba(0,0,0,0.5);
+  }
 }
 // Contact window
 #contact{
