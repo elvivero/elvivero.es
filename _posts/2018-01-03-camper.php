@@ -3,7 +3,7 @@ layout: post_old
 title: Camper
 image_path: /projects/camper
 footer: '<strong>Camper</strong><br>Retailbranding: Shop design concept; trade fair stands; point of sale and signage <br>Agency: OMB </div>'
-style: ''
+
 ---
 
 <img src="{% include image_path.html %}/camper.jpg">

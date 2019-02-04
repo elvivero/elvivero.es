@@ -3,7 +3,7 @@ layout: post_old
 title: BNP
 image_path: /projects/bnp
 footer: '<strong>BNP Paribas Bank</strong><br>Interior design concept<br>Agency: Wolff Olins'
-style: ''
+
 ---
 
 <img src="{% include image_path.html %}/BNP-10.jpg">

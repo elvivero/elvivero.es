@@ -3,7 +3,7 @@ layout: post_old
 title: Barnasud
 image_path: /projects/barnasud
 footer: '<strong>Centro comercial Barnasud</strong><br>Signage and wayfinding design for shopping center in Gava, BCN<br> Agency: Addison'
-style: ''
+
 ---
 
 <img src="{% include image_path.html %}/barnasud.jpg"class="espacio45" >
