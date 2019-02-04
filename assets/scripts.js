@@ -129,7 +129,7 @@ $(function() {
   $("body").overlayScrollbars({
     overflowBehavior : {
                 x : "scroll",
-                y : "scroll"
+                y : "hidden"
               }
   });
   $("#selector").overlayScrollbars({});
