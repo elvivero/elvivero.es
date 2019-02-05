@@ -61,15 +61,14 @@ function xscroll(dir){
 }
 
 $(document).keydown(function(e) {
-switch(e.which) {
-    case 37:
-      xscroll("left");
-    break;
-    case 39:
-      xscroll("right");
-    break;
-}
-e.preventDefault(); // prevent the default action (scroll / move caret)
+  let key = e.which;
+  if ( key == 37 || key == 38 ){
+    xscroll("left");
+  }
+  if ( key == 39 || key == 40 ){
+    xscroll("right");
+  }
+  e.preventDefault();
 });
 
 function isTouchDevice() {
@@ -95,6 +94,7 @@ function update_arrows(scroll,docwidth) {
   }
 }
 
+// Arrows vertical responsive
 function arrows_position(){
     let content = $(".content").height();
     let scroll_height = 43;
@@ -125,6 +125,7 @@ function onscroll() {
 $( window ).scroll( onscroll );
 setInterval(onscroll, 250);
 
+// Scrollbar plugin initialization
 $(function() {
   $("body").overlayScrollbars({
     overflowBehavior : {
