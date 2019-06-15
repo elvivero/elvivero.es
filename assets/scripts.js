@@ -1,3 +1,4 @@
+let print = console.log;
 /* Contact */
 function displaycontact() {
   $( "#contact" ).css("top","60px");
@@ -122,5 +123,3 @@ function onscroll() {
 
 $( window ).scroll( onscroll );
 setInterval(onscroll, 250);
-
-
