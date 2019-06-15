@@ -1,6 +1,6 @@
 function loadImages(imgs, i){
   let src = $(imgs[i]).data("link");
-  $(imgs[i]).attr("href",src).on("load",function(){
+  $(imgs[i]).removeAttr("data-link").attr("href",src).on("load",function(){
     if(i < imgs.length - 1){
       loadImages(imgs,i+1);
     }

@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-object{
+svg{
 	height: 535px;
 	position: relative;
 	left: -27px;
@@ -45,19 +45,19 @@ object{
 
 
 @media screen and (max-height: 550px) {  
-	object, .content{
+	svg, .content{
 		height: 350px;
 	}
-	object{
+	svg{
 		left: -17px;
 	}
 }
 
 @media screen and (max-height: 670px) and (min-height: 550px) {  
-	object, .content{
+	svg, .content{
 		height: 435px;
 	}
-	object{
+	svg{
 		left: -22px;
 	}
 }
