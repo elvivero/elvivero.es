@@ -1,4 +1,3 @@
-let print = console.log;
 /* Contact */
 function displaycontact() {
   $( "#contact" ).css("top","60px");

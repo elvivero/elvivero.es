@@ -6,5 +6,4 @@ function loadImages(imgs, i){
     }
   })
 }
-
-loadImages($("svg image"),0);
+$(function(){loadImages($("svg image"),0);});
