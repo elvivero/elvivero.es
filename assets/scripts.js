@@ -99,7 +99,6 @@ function arrows_position(){
     let content = $(".content").height();
     let scroll_height = 43;
     let position = content/2 + 65 - scroll_height/2;
-    console.log(position);
     $(".scroll").css("top",position+"px");
 
 }
@@ -119,20 +118,7 @@ function onscroll() {
   update_arrows(scroll, docwidth);
   arrows_position();
   update_favicon(scroll, docwidth);
-
 }
 
 $( window ).scroll( onscroll );
 setInterval(onscroll, 250);
-
-// Scrollbar plugin initialization
-$(function() {
-  $("body").overlayScrollbars({
-    overflowBehavior : {
-                x : "scroll",
-                y : "hidden"
-              }
-  });
-  $("#selector").overlayScrollbars({});
-});
-
