@@ -97,14 +97,15 @@ header{
   img:last-child{
 	  margin-right: 25px !important;
   }
-
   .fix350{
     height: 350px;
   }
   .fix535{
     height: 535px;
   }
-
+	.espacio60{ margin-right: 60px; }
+  .espacio55{ margin-right: 55px; }
+  .espacio50{ margin-right: 50px; }
   .espacio45{ margin-right: 45px; }
 	.espacio40{ margin-right: 40px; }
   .espacio35{ margin-right: 35px; }
@@ -113,6 +114,7 @@ header{
 	.espacio20{ margin-right: 20px; }
   .espacio15{ margin-right: 15px; }
 	.espacio10{ margin-right: 10px; }
+	.espacio5 { margin-right:  5px; }
 
   .nohover:hover{
     background: transparent !important;
@@ -302,3 +304,15 @@ header{
 
 html.touch .scroll{ display: none;}
 // Scroll end
+
+
+@media screen and (max-height: 250px) {
+  header{display:none;}
+  .description{display:none;}
+	.content{
+		height: 100vh;
+		.fix535, img, iframe{
+			height: 100vh !important;
+		}
+	}
+} 
