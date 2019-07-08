@@ -33,8 +33,21 @@ window.ondragstart = function() {
   return false;
 };
 
-// Iframe responsive
+let scrollBody = null; let scrollSelector = null;
+function load_scrollbars(){
+  scrollBody     = $("body").overlayScrollbars({overflowBehavior:{x:"scroll",y:"hidden"}}).overlayScrollbars();
+  scrollSelector = $("#selector").overlayScrollbars({}).overlayScrollbars();
+}
 $( function() {
+  // Scrollbars loading
+  load_scrollbars();
+  // Lazy loading
+  let images = document.querySelectorAll("#content img");
+  new LazyLoad(images, {
+     root: "body",
+     threshold: 500
+  });
+  // Iframe responsive
   $( "iframe" ).each( function() {
     let el = $( this );
     let p = el.attr( "width" ) / el.attr( "height" );
@@ -112,13 +125,13 @@ function update_favicon(scroll, docwidth){
 }
 
 function onscroll() {
-  let inst = $("body").overlayScrollbars();
-  let scroll = inst.scroll().x.position;
-  let docwidth = inst.scroll().x.max;
+  let scroll = scrollBody.scroll().x.position;
+  let docwidth = scrollBody.scroll().x.max;
   update_arrows(scroll, docwidth);
   arrows_position();
   update_favicon(scroll, docwidth);
 }
 
 $( window ).scroll( onscroll );
-setInterval(onscroll, 250);
+setInterval(onscroll, 300);
+setInterval(load_scrollbars, 300);
