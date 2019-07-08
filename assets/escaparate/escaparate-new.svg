@@ -6,8 +6,6 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    x="0px"
    y="0px"
@@ -15,698 +13,603 @@
    xml:space="preserve"
    width="7795"
    height="535"
-   id="svg228"
-   sodipodi:docname="escaparate-new.svg"
-   inkscape:version="0.92.4 5da689c313, 2019-01-14"><sodipodi:namedview
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1"
-   objecttolerance="10"
-   gridtolerance="10"
-   guidetolerance="10"
-   inkscape:pageopacity="0"
-   inkscape:pageshadow="2"
-   inkscape:window-width="1280"
-   inkscape:window-height="800"
-   id="namedview246"
-   showgrid="false"
-   inkscape:zoom="0.76561898"
-   inkscape:cx="794.50187"
-   inkscape:cy="267.5"
-   inkscape:window-x="0"
-   inkscape:window-y="0"
-   inkscape:window-maximized="0"
-   inkscape:current-layer="svg228" /><metadata
+   id="svg228"><metadata
    id="metadata248"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
    id="defs246" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/banco.jpg"
-   xlink:href="img/escaparate/banco.jpg"
-   id="image254"
-   height="113.3"
-   width="168.96001"
-   style="overflow:visible"
+   xlink:href="/assets/img/escaparate/banco.jpg"
+   y="397.80991"
    x="350.89227"
-   y="397.80991" />
+   style="overflow:visible"
+   width="168.96001"
+   height="113.3"
+   id="image254" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/transutopias.jpg"
-   xlink:href="img/escaparate/transutopias.jpg"
-   y="200.3557"
-   x="59.19339"
-   id="image4927"
-   preserveAspectRatio="none"
+   xlink:href="/assets/img/escaparate/transutopias.jpg"
+   width="116.63707"
    height="65.390564"
-   width="116.63707" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/artur-barrio.jpg"
-   xlink:href="img/escaparate/artur-barrio.jpg"
-   y="15.669447"
-   x="20.9041"
-   id="image4916"
    preserveAspectRatio="none"
+   id="image4927"
+   x="59.19339"
+   y="200.3557" />
+<image
+   xlink:href="/assets/img/escaparate/artur-barrio.jpg"
+   width="148.97903"
    height="97.641663"
-   width="148.97903" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/lktab.jpg"
-   xlink:href="img/escaparate/lktab.jpg"
-   id="image186"
-   height="73.280602"
-   width="120.9982"
-   style="overflow:visible"
-   x="865.9057"
-   y="41.841312" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/andres-jaque.jpg"
-   xlink:href="img/escaparate/andres-jaque.jpg"
-   width="96.675087"
-   height="137.66533"
    preserveAspectRatio="none"
-   id="image4421"
+   id="image4916"
+   x="20.9041"
+   y="15.669447" />
+<image
+   xlink:href="/assets/img/escaparate/lktab.jpg"
+   y="41.841312"
+   x="865.9057"
+   style="overflow:visible"
+   width="120.9982"
+   height="73.280602"
+   id="image186" />
+<image
+   xlink:href="/assets/img/escaparate/andres-jaque.jpg"
+   y="153.07904"
    x="716.34137"
-   y="153.07904" />
+   id="image4421"
+   preserveAspectRatio="none"
+   height="137.66533"
+   width="96.675087" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/buendia-01.jpg"
-   xlink:href="img/escaparate/buendia-01.jpg"
-   id="image136"
-   height="95"
-   width="140"
-   style="overflow:visible"
+   xlink:href="/assets/img/escaparate/buendia-01.jpg"
+   y="415.31122"
    x="1195.3672"
-   y="415.31122" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/ao.jpg"
-   xlink:href="img/escaparate/ao.jpg"
-   id="image120"
-   height="90.388062"
-   width="112.98508"
    style="overflow:visible"
+   width="140"
+   height="95"
+   id="image136" />
+<image
+   xlink:href="/assets/img/escaparate/ao.jpg"
+   y="16.266657"
    x="563.6651"
-   y="16.266657" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/fl2.jpg"
-   xlink:href="img/escaparate/fl2.jpg"
-   id="image164"
-   height="110.21358"
-   width="250.5522"
    style="overflow:visible"
+   width="112.98508"
+   height="90.388062"
+   id="image120" />
+<image
+   xlink:href="/assets/img/escaparate/fl2.jpg"
+   y="207.30638"
    x="908.78778"
-   y="207.30638" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/TSgallery.jpg"
-   xlink:href="img/escaparate/TSgallery.jpg"
-   id="image250"
-   height="91.996101"
-   width="138.34"
    style="overflow:visible"
+   width="250.5522"
+   height="110.21358"
+   id="image164" />
+<image
+   xlink:href="/assets/img/escaparate/TSgallery.jpg"
+   y="411.72687"
    x="924.04303"
-   y="411.72687" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/24x7.jpg"
-   xlink:href="img/escaparate/24x7.jpg"
-   id="image112"
-   height="88.003799"
-   width="135.07561"
    style="overflow:visible"
+   width="138.34"
+   height="91.996101"
+   id="image250" />
+<image
+   xlink:href="/assets/img/escaparate/24x7.jpg"
+   y="14.282319"
    x="1118.4661"
-   y="14.282319" />
+   style="overflow:visible"
+   width="135.07561"
+   height="88.003799"
+   id="image112" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/hs.jpg"
-   xlink:href="img/escaparate/hs.jpg"
-   id="image172"
-   height="152.325"
-   width="130.9995"
-   style="overflow:visible;opacity:1"
+   xlink:href="/assets/img/escaparate/hs.jpg"
+   y="200.59105"
    x="1270.4355"
-   y="200.59105" />
+   style="overflow:visible;opacity:1"
+   width="130.9995"
+   height="152.325"
+   id="image172" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/cfgl4.jpg"
-   xlink:href="img/escaparate/cfgl4.jpg"
-   id="image144"
-   height="91.998001"
-   width="91.998001"
-   style="overflow:visible"
+   xlink:href="/assets/img/escaparate/cfgl4.jpg"
+   y="29.901491"
    x="1386.6259"
-   y="29.901491" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/dark3.jpg"
-   xlink:href="img/escaparate/dark3.jpg"
-   id="image150"
-   height="170.60809"
-   width="85.474998"
    style="overflow:visible"
+   width="91.998001"
+   height="91.998001"
+   id="image144" />
+<image
+   xlink:href="/assets/img/escaparate/dark3.jpg"
+   y="343.09851"
    x="1469.6271"
-   y="343.09851" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/cartagena.jpg"
-   xlink:href="img/escaparate/cartagena.jpg"
-   id="image140"
-   height="178.2655"
-   width="134.53999"
    style="overflow:visible"
+   width="85.474998"
+   height="170.60809"
+   id="image150" />
+<image
+   xlink:href="/assets/img/escaparate/cartagena.jpg"
+   y="163.72501"
    x="1611.9817"
-   y="163.72501" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/eec.jpg"
-   xlink:href="img/escaparate/eec.jpg"
-   id="image160"
-   height="114.637"
-   width="197.64999"
    style="overflow:visible"
+   width="134.53999"
+   height="178.2655"
+   id="image140" />
+<image
+   xlink:href="/assets/img/escaparate/eec.jpg"
+   y="0"
    x="1647.9817"
-   y="0" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/netescopio.jpg"
-   xlink:href="img/escaparate/netescopio.jpg"
-   id="image208"
-   height="101.0045"
-   width="175.66"
    style="overflow:visible"
+   width="197.64999"
+   height="114.637"
+   id="image160" />
+<image
+   xlink:href="/assets/img/escaparate/netescopio.jpg"
+   y="394.70447"
    x="1733.7698"
-   y="394.70447" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/tomas.jpg"
-   xlink:href="img/escaparate/tomas.jpg"
-   id="image246"
-   height="129.99899"
-   width="152.94"
    style="overflow:visible"
+   width="175.66"
+   height="101.0045"
+   id="image208" />
+<image
+   xlink:href="/assets/img/escaparate/tomas.jpg"
+   y="159"
    x="1904.9817"
-   y="159" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/lax2.jpg"
-   xlink:href="img/escaparate/lax2.jpg"
-   id="image180"
-   height="114.0224"
-   width="94.003197"
    style="overflow:visible"
+   width="152.94"
+   height="129.99899"
+   id="image246" />
+<image
+   xlink:href="/assets/img/escaparate/lax2.jpg"
+   y="369.2778"
    x="2056.9817"
-   y="369.2778" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/7impertinentes.jpg"
-   xlink:href="img/escaparate/7impertinentes.jpg"
-   id="image110"
-   height="87.483002"
-   width="101.0031"
    style="overflow:visible"
+   width="94.003197"
+   height="114.0224"
+   id="image180" />
+<image
+   xlink:href="/assets/img/escaparate/7impertinentes.jpg"
+   y="32.507343"
    x="2077.4744"
-   y="32.507343" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/multitsing.jpg"
-   xlink:href="img/escaparate/multitsing.jpg"
-   id="image206"
-   height="150"
-   width="104"
    style="overflow:visible"
+   width="101.0031"
+   height="87.483002"
+   id="image110" />
+<image
+   xlink:href="/assets/img/escaparate/multitsing.jpg"
+   y="180"
    x="2190.9817"
-   y="180" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/papelera.jpg"
-   xlink:href="img/escaparate/papelera.jpg"
-   id="image216"
-   height="121.464"
-   width="117.9936"
    style="overflow:visible"
+   width="104"
+   height="150"
+   id="image206" />
+<image
+   xlink:href="/assets/img/escaparate/papelera.jpg"
+   y="391.26471"
    x="2294.9817"
-   y="391.26471" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/de11a21-esc-01.jpg"
-   xlink:href="img/escaparate/de11a21-esc-01.jpg"
-   id="image152"
-   height="189.774"
-   width="186.8544"
    style="overflow:visible"
+   width="117.9936"
+   height="121.464"
+   id="image216" />
+<image
+   xlink:href="/assets/img/escaparate/de11a21-esc-01.jpg"
+   y="31.6562"
    x="2383.1201"
-   y="31.6562" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/aliasyed.jpg"
-   xlink:href="img/escaparate/aliasyed.jpg"
-   id="image118"
-   height="130"
-   width="74"
    style="overflow:visible"
+   width="186.8544"
+   height="189.774"
+   id="image152" />
+<image
+   xlink:href="/assets/img/escaparate/aliasyed.jpg"
+   y="301"
    x="2507.9817"
-   y="301" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/plp-lomos.jpg"
-   xlink:href="img/escaparate/plp-lomos.jpg"
-   id="image220"
-   height="120"
-   width="71"
    style="overflow:visible"
+   width="74"
+   height="130"
+   id="image118" />
+<image
+   xlink:href="/assets/img/escaparate/plp-lomos.jpg"
+   y="153"
    x="2683.9817"
-   y="153" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/outsiders.jpg"
-   xlink:href="img/escaparate/outsiders.jpg"
-   id="image214"
-   height="90"
-   width="90"
    style="overflow:visible"
-   x="2710.9817"
-   y="410.80298" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/chachi_e2.jpg"
-   xlink:href="img/escaparate/chachi_e2.jpg"
-   id="image146"
-   height="110"
-   width="119"
-   style="overflow:visible"
-   x="2778.9817"
-   y="-1" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/despleg_e.jpg"
-   xlink:href="img/escaparate/despleg_e.jpg"
-   id="image154"
-   height="197.246"
-   width="186.004"
-   style="overflow:visible"
-   x="2900.9817"
-   y="173.033" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/postales100.jpg"
-   xlink:href="img/escaparate/postales100.jpg"
-   id="image222"
-   height="123.33"
-   width="147.996"
-   style="overflow:visible"
-   x="3006.9817"
-   y="409.33331" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/retirada.jpg"
-   xlink:href="img/escaparate/retirada.jpg"
-   id="image234"
-   height="120.9978"
-   width="93.555"
-   style="overflow:visible"
-   x="3094.5693"
-   y="5" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/jacksmith.jpg"
-   xlink:href="img/escaparate/jacksmith.jpg"
-   id="image178"
-   height="137.02499"
-   width="95.003998"
-   style="overflow:visible"
-   x="3242.9817"
-   y="277" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/presentense.jpg"
-   xlink:href="img/escaparate/presentense.jpg"
-   id="image224"
-   height="138.9942"
-   width="93.915001"
-   style="overflow:visible"
-   x="3310.9817"
-   y="45" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/ec.jpg"
-   xlink:href="img/escaparate/ec.jpg"
-   id="image156"
-   height="138.006"
-   width="138.006"
-   style="overflow:visible"
-   x="3439.5134"
-   y="200.96204" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/Bienal07.jpg"
-   xlink:href="img/escaparate/Bienal07.jpg"
-   id="image126"
-   height="132.735"
-   width="123.0011"
-   style="overflow:visible"
-   x="3543.1335"
-   y="22.898783" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/mmcubierta.jpg"
-   xlink:href="img/escaparate/mmcubierta.jpg"
-   id="image200"
-   height="170"
-   width="208"
-   style="overflow:visible"
-   x="3544.9817"
-   y="365" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/ccc07.jpg"
-   xlink:href="img/escaparate/ccc07.jpg"
-   id="image142"
-   height="157.995"
-   width="110.5965"
-   style="overflow:visible"
-   x="3709.9817"
-   y="168" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/biografias.jpg"
-   xlink:href="img/escaparate/biografias.jpg"
-   id="image130"
-   height="176.2915"
-   width="126.525"
-   style="overflow:visible"
-   x="3899.3867"
-   y="292.10635" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/bombita.jpg"
-   xlink:href="img/escaparate/bombita.jpg"
-   id="image132"
-   height="93.997803"
-   width="91.260002"
-   style="overflow:visible"
-   x="3904.665"
-   y="41.063259" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/prim_cub01.jpg"
-   xlink:href="img/escaparate/prim_cub01.jpg"
-   id="image228"
-   height="185"
-   width="112"
-   style="overflow:visible"
-   x="4126.9819"
-   y="225" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/mn.jpg"
-   xlink:href="img/escaparate/mn.jpg"
-   id="image202"
-   height="137.0061"
-   width="108.735"
-   style="overflow:visible"
-   x="4188.9819"
-   y="-1" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/inventario_cub.jpg"
-   xlink:href="img/escaparate/inventario_cub.jpg"
-   id="image176"
-   height="142.3125"
-   width="99"
-   style="overflow:visible"
-   x="4351.9819"
-   y="378" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/revistas01.jpg"
-   xlink:href="img/escaparate/revistas01.jpg"
-   id="image236"
-   height="175"
-   width="207"
-   style="overflow:visible"
-   x="4379.5513"
-   y="111.07591" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/milmilmil.jpg"
-   xlink:href="img/escaparate/milmilmil.jpg"
-   id="image198"
-   height="155"
-   width="147"
-   style="overflow:visible"
-   x="4560.6528"
-   y="361.08856" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/lineasdemira01.jpg"
-   xlink:href="img/escaparate/lineasdemira01.jpg"
-   id="image184"
-   height="150"
-   width="111"
-   style="overflow:visible"
-   x="4673.9819"
-   y="2" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/albarrc_e.jpg"
-   xlink:href="img/escaparate/albarrc_e.jpg"
-   id="image116"
-   height="130"
-   width="89"
-   style="overflow:visible"
-   x="4725.9819"
-   y="212" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/eclectic2.jpg"
-   xlink:href="img/escaparate/eclectic2.jpg"
-   id="image158"
-   height="49.998001"
-   width="196.146"
-   style="overflow:visible"
-   x="4790.9819"
-   y="422" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/tempos2.jpg"
-   xlink:href="img/escaparate/tempos2.jpg"
-   id="image244"
-   height="103"
-   width="160"
-   style="overflow:visible"
-   x="4929.3613"
-   y="24.936739" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/fluxus.jpg"
-   xlink:href="img/escaparate/fluxus.jpg"
-   id="image166"
-   height="183.2316"
-   width="127.836"
-   style="overflow:visible"
-   x="4962.1396"
-   y="174.6564" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/visionarios105px.jpg"
-   xlink:href="img/escaparate/visionarios105px.jpg"
-   id="image252"
-   height="105"
-   width="76"
-   style="overflow:visible"
-   x="5062.9819"
-   y="418" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/acerca.jpg"
-   xlink:href="img/escaparate/acerca.jpg"
-   id="image114"
-   height="178.08"
-   width="159"
-   style="overflow:visible"
-   x="5205.9819"
-   y="235.92" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/LH.jpg"
-   xlink:href="img/escaparate/LH.jpg"
-   id="image182"
-   height="150"
-   width="118"
-   style="overflow:visible"
-   x="5290.9819"
-   y="2" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/hfde_e.jpg"
-   xlink:href="img/escaparate/hfde_e.jpg"
-   id="image168"
-   height="74"
-   width="149"
-   style="overflow:visible"
-   x="5440.2695"
-   y="436" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/sanidad.jpg"
-   xlink:href="img/escaparate/sanidad.jpg"
-   id="image240"
-   height="184.005"
-   width="141"
-   style="overflow:visible"
-   x="5512.9819"
-   y="169" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/marco_e.jpg"
-   xlink:href="img/escaparate/marco_e.jpg"
-   id="image192"
-   height="48"
-   width="171"
-   style="overflow:visible"
-   x="5549.9565"
-   y="47.848175" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/hfde2_e.jpg"
-   xlink:href="img/escaparate/hfde2_e.jpg"
-   id="image170"
-   height="74"
-   width="148"
-   style="overflow:visible"
-   x="5612.2695"
-   y="436" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/arco_cubierta.jpg"
-   xlink:href="img/escaparate/arco_cubierta.jpg"
-   id="image122"
-   height="185"
-   width="136"
-   style="overflow:visible"
-   x="5768.9819"
-   y="98" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/sb_cubierta.jpg"
-   xlink:href="img/escaparate/sb_cubierta.jpg"
-   id="image242"
-   height="139.0005"
-   width="97.904701"
-   style="overflow:visible"
-   x="5885.0024"
-   y="378.95142" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/idealista-01b.jpg"
-   xlink:href="img/escaparate/idealista-01b.jpg"
-   id="image174"
-   height="138.01601"
-   width="227"
-   style="overflow:visible"
-   x="6031.9819"
-   y="185.492" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/lumin_e.jpg"
-   xlink:href="img/escaparate/lumin_e.jpg"
-   id="image188"
-   height="130"
-   width="91"
-   style="overflow:visible"
-   x="6041.9819"
-   y="-1" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/fecyt2_e.jpg"
-   xlink:href="img/escaparate/fecyt2_e.jpg"
-   id="image162"
-   height="183"
-   width="173"
-   style="overflow:visible"
-   x="6159.9819"
-   y="351" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/carmor_e.jpg"
-   xlink:href="img/escaparate/carmor_e.jpg"
-   id="image138"
-   height="125"
-   width="96"
-   style="overflow:visible"
-   x="6314.9819"
-   y="37" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/mncn_e.png"
-   xlink:href="img/escaparate/mncn_e.png"
-   id="image204"
-   height="134.83508"
-   width="179.35609"
-   style="overflow:visible"
-   x="6391.4351"
-   y="223.74738" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/ps1_e2.jpg"
-   xlink:href="img/escaparate/ps1_e2.jpg"
-   id="image230"
-   height="87"
-   width="191"
-   style="overflow:visible"
-   x="6457.4473"
-   y="418.39804" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/otngcbrt_e.jpg"
-   xlink:href="img/escaparate/otngcbrt_e.jpg"
-   id="image212"
-   height="127"
-   width="164"
-   style="overflow:visible"
-   x="6542.0117"
-   y="60.874065" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/prf_amo_e.jpg"
-   xlink:href="img/escaparate/prf_amo_e.jpg"
-   id="image226"
-   height="102"
-   width="151"
-   style="overflow:visible"
-   x="6704.7012"
-   y="242.23659" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/bienalvenecia.jpg"
-   xlink:href="img/escaparate/bienalvenecia.jpg"
-   id="image128"
-   height="153"
-   width="139"
-   style="overflow:visible"
-   x="6842.5215"
-   y="8.1428776" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/cyccport_e2.jpg"
-   xlink:href="img/escaparate/cyccport_e2.jpg"
-   id="image148"
-   height="150"
-   width="156"
-   style="overflow:visible"
-   x="6858.0122"
-   y="384.00327" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/brk_e.jpg"
-   xlink:href="img/escaparate/brk_e.jpg"
-   id="image134"
-   height="118"
-   width="166"
-   style="overflow:visible"
-   x="6972.5186"
-   y="204.77586" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/puch_e.jpg"
-   xlink:href="img/escaparate/puch_e.jpg"
-   id="image232"
-   height="118"
-   width="148"
-   style="overflow:visible"
-   x="7139.5713"
-   y="45.299927" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/marcostand_e2.jpg"
-   xlink:href="img/escaparate/marcostand_e2.jpg"
-   id="image194"
-   height="100"
-   width="194"
-   style="overflow:visible"
-   x="7142.0571"
-   y="388.9877" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/rstand_e.jpg"
-   xlink:href="img/escaparate/rstand_e.jpg"
-   id="image238"
-   height="107"
-   width="219"
-   style="overflow:visible"
-   x="7283.7778"
-   y="216.05331" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/trofeo_e2.jpg"
-   xlink:href="img/escaparate/trofeo_e2.jpg"
-   id="image248"
-   height="100"
-   width="64"
-   style="overflow:visible"
-   x="7421.0732"
-   y="63.164127" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/basso_e2.jpg"
-   xlink:href="img/escaparate/basso_e2.jpg"
-   id="image124"
-   height="140"
-   width="156"
-   style="overflow:visible"
-   x="7450.4692"
-   y="392.44214" />
-<image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/pixelware_e2.jpg"
-   xlink:href="img/escaparate/pixelware_e2.jpg"
-   id="image218"
+   width="71"
    height="120"
-   width="155"
-   style="overflow:visible"
-   x="7599.5063"
-   y="49.673439" />
+   id="image220" />
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/metro_02.jpg"
-   xlink:href="img/escaparate/metro_02.jpg"
-   id="image196"
-   height="150.66"
-   width="106.299"
+   xlink:href="/assets/img/escaparate/outsiders.jpg"
+   y="410.80298"
+   x="2710.9817"
    style="overflow:visible"
+   width="90"
+   height="90"
+   id="image214" />
+<image
+   xlink:href="/assets/img/escaparate/chachi_e2.jpg"
+   y="-1"
+   x="2778.9817"
+   style="overflow:visible"
+   width="119"
+   height="110"
+   id="image146" />
+<image
+   xlink:href="/assets/img/escaparate/despleg_e.jpg"
+   y="173.033"
+   x="2900.9817"
+   style="overflow:visible"
+   width="186.004"
+   height="197.246"
+   id="image154" />
+<image
+   xlink:href="/assets/img/escaparate/postales100.jpg"
+   y="409.33331"
+   x="3006.9817"
+   style="overflow:visible"
+   width="147.996"
+   height="123.33"
+   id="image222" />
+<image
+   xlink:href="/assets/img/escaparate/retirada.jpg"
+   y="5"
+   x="3094.5693"
+   style="overflow:visible"
+   width="93.555"
+   height="120.9978"
+   id="image234" />
+<image
+   xlink:href="/assets/img/escaparate/jacksmith.jpg"
+   y="277"
+   x="3242.9817"
+   style="overflow:visible"
+   width="95.003998"
+   height="137.02499"
+   id="image178" />
+<image
+   xlink:href="/assets/img/escaparate/presentense.jpg"
+   y="45"
+   x="3310.9817"
+   style="overflow:visible"
+   width="93.915001"
+   height="138.9942"
+   id="image224" />
+<image
+   xlink:href="/assets/img/escaparate/ec.jpg"
+   y="200.96204"
+   x="3439.5134"
+   style="overflow:visible"
+   width="138.006"
+   height="138.006"
+   id="image156" />
+<image
+   xlink:href="/assets/img/escaparate/Bienal07.jpg"
+   y="22.898783"
+   x="3543.1335"
+   style="overflow:visible"
+   width="123.0011"
+   height="132.735"
+   id="image126" />
+<image
+   xlink:href="/assets/img/escaparate/mmcubierta.jpg"
+   y="365"
+   x="3544.9817"
+   style="overflow:visible"
+   width="208"
+   height="170"
+   id="image200" />
+<image
+   xlink:href="/assets/img/escaparate/ccc07.jpg"
+   y="168"
+   x="3709.9817"
+   style="overflow:visible"
+   width="110.5965"
+   height="157.995"
+   id="image142" />
+<image
+   xlink:href="/assets/img/escaparate/biografias.jpg"
+   y="292.10635"
+   x="3899.3867"
+   style="overflow:visible"
+   width="126.525"
+   height="176.2915"
+   id="image130" />
+<image
+   xlink:href="/assets/img/escaparate/bombita.jpg"
+   y="41.063259"
+   x="3904.665"
+   style="overflow:visible"
+   width="91.260002"
+   height="93.997803"
+   id="image132" />
+<image
+   xlink:href="/assets/img/escaparate/prim_cub01.jpg"
+   y="225"
+   x="4126.9819"
+   style="overflow:visible"
+   width="112"
+   height="185"
+   id="image228" />
+<image
+   xlink:href="/assets/img/escaparate/mn.jpg"
+   y="-1"
+   x="4188.9819"
+   style="overflow:visible"
+   width="108.735"
+   height="137.0061"
+   id="image202" />
+<image
+   xlink:href="/assets/img/escaparate/inventario_cub.jpg"
+   y="378"
+   x="4351.9819"
+   style="overflow:visible"
+   width="99"
+   height="142.3125"
+   id="image176" />
+<image
+   xlink:href="/assets/img/escaparate/revistas01.jpg"
+   y="111.07591"
+   x="4379.5513"
+   style="overflow:visible"
+   width="207"
+   height="175"
+   id="image236" />
+<image
+   xlink:href="/assets/img/escaparate/milmilmil.jpg"
+   y="361.08856"
+   x="4560.6528"
+   style="overflow:visible"
+   width="147"
+   height="155"
+   id="image198" />
+<image
+   xlink:href="/assets/img/escaparate/lineasdemira01.jpg"
+   y="2"
+   x="4673.9819"
+   style="overflow:visible"
+   width="111"
+   height="150"
+   id="image184" />
+<image
+   xlink:href="/assets/img/escaparate/albarrc_e.jpg"
+   y="212"
+   x="4725.9819"
+   style="overflow:visible"
+   width="89"
+   height="130"
+   id="image116" />
+<image
+   xlink:href="/assets/img/escaparate/eclectic2.jpg"
+   y="422"
+   x="4790.9819"
+   style="overflow:visible"
+   width="196.146"
+   height="49.998001"
+   id="image158" />
+<image
+   xlink:href="/assets/img/escaparate/tempos2.jpg"
+   y="24.936739"
+   x="4929.3613"
+   style="overflow:visible"
+   width="160"
+   height="103"
+   id="image244" />
+<image
+   xlink:href="/assets/img/escaparate/fluxus.jpg"
+   y="174.6564"
+   x="4962.1396"
+   style="overflow:visible"
+   width="127.836"
+   height="183.2316"
+   id="image166" />
+<image
+   xlink:href="/assets/img/escaparate/visionarios105px.jpg"
+   y="418"
+   x="5062.9819"
+   style="overflow:visible"
+   width="76"
+   height="105"
+   id="image252" />
+<image
+   xlink:href="/assets/img/escaparate/acerca.jpg"
+   y="235.92"
+   x="5205.9819"
+   style="overflow:visible"
+   width="159"
+   height="178.08"
+   id="image114" />
+<image
+   xlink:href="/assets/img/escaparate/LH.jpg"
+   y="2"
+   x="5290.9819"
+   style="overflow:visible"
+   width="118"
+   height="150"
+   id="image182" />
+<image
+   xlink:href="/assets/img/escaparate/hfde_e.jpg"
+   y="436"
+   x="5440.2695"
+   style="overflow:visible"
+   width="149"
+   height="74"
+   id="image168" />
+<image
+   xlink:href="/assets/img/escaparate/sanidad.jpg"
+   y="169"
+   x="5512.9819"
+   style="overflow:visible"
+   width="141"
+   height="184.005"
+   id="image240" />
+<image
+   xlink:href="/assets/img/escaparate/marco_e.jpg"
+   y="47.848175"
+   x="5549.9565"
+   style="overflow:visible"
+   width="171"
+   height="48"
+   id="image192" />
+<image
+   xlink:href="/assets/img/escaparate/hfde2_e.jpg"
+   y="436"
+   x="5612.2695"
+   style="overflow:visible"
+   width="148"
+   height="74"
+   id="image170" />
+<image
+   xlink:href="/assets/img/escaparate/arco_cubierta.jpg"
+   y="98"
+   x="5768.9819"
+   style="overflow:visible"
+   width="136"
+   height="185"
+   id="image122" />
+<image
+   xlink:href="/assets/img/escaparate/sb_cubierta.jpg"
+   y="378.95142"
+   x="5885.0024"
+   style="overflow:visible"
+   width="97.904701"
+   height="139.0005"
+   id="image242" />
+<image
+   xlink:href="/assets/img/escaparate/idealista-01b.jpg"
+   y="185.492"
+   x="6031.9819"
+   style="overflow:visible"
+   width="227"
+   height="138.01601"
+   id="image174" />
+<image
+   xlink:href="/assets/img/escaparate/lumin_e.jpg"
+   y="-1"
+   x="6041.9819"
+   style="overflow:visible"
+   width="91"
+   height="130"
+   id="image188" />
+<image
+   xlink:href="/assets/img/escaparate/fecyt2_e.jpg"
+   y="351"
+   x="6159.9819"
+   style="overflow:visible"
+   width="173"
+   height="183"
+   id="image162" />
+<image
+   xlink:href="/assets/img/escaparate/carmor_e.jpg"
+   y="37"
+   x="6314.9819"
+   style="overflow:visible"
+   width="96"
+   height="125"
+   id="image138" />
+<image
+   xlink:href="/assets/img/escaparate/mncn_e.png"
+   y="223.74738"
+   x="6391.4351"
+   style="overflow:visible"
+   width="179.35609"
+   height="134.83508"
+   id="image204" />
+<image
+   xlink:href="/assets/img/escaparate/ps1_e2.jpg"
+   y="418.39804"
+   x="6457.4473"
+   style="overflow:visible"
+   width="191"
+   height="87"
+   id="image230" />
+<image
+   xlink:href="/assets/img/escaparate/otngcbrt_e.jpg"
+   y="60.874065"
+   x="6542.0117"
+   style="overflow:visible"
+   width="164"
+   height="127"
+   id="image212" />
+<image
+   xlink:href="/assets/img/escaparate/prf_amo_e.jpg"
+   y="242.23659"
+   x="6704.7012"
+   style="overflow:visible"
+   width="151"
+   height="102"
+   id="image226" />
+<image
+   xlink:href="/assets/img/escaparate/bienalvenecia.jpg"
+   y="8.1428776"
+   x="6842.5215"
+   style="overflow:visible"
+   width="139"
+   height="153"
+   id="image128" />
+<image
+   xlink:href="/assets/img/escaparate/cyccport_e2.jpg"
+   y="384.00327"
+   x="6858.0122"
+   style="overflow:visible"
+   width="156"
+   height="150"
+   id="image148" />
+<image
+   xlink:href="/assets/img/escaparate/brk_e.jpg"
+   y="204.77586"
+   x="6972.5186"
+   style="overflow:visible"
+   width="166"
+   height="118"
+   id="image134" />
+<image
+   xlink:href="/assets/img/escaparate/puch_e.jpg"
+   y="45.299927"
+   x="7139.5713"
+   style="overflow:visible"
+   width="148"
+   height="118"
+   id="image232" />
+<image
+   xlink:href="/assets/img/escaparate/marcostand_e2.jpg"
+   y="388.9877"
+   x="7142.0571"
+   style="overflow:visible"
+   width="194"
+   height="100"
+   id="image194" />
+<image
+   xlink:href="/assets/img/escaparate/rstand_e.jpg"
+   y="216.05331"
+   x="7283.7778"
+   style="overflow:visible"
+   width="219"
+   height="107"
+   id="image238" />
+<image
+   xlink:href="/assets/img/escaparate/trofeo_e2.jpg"
+   y="63.164127"
+   x="7421.0732"
+   style="overflow:visible"
+   width="64"
+   height="100"
+   id="image248" />
+<image
+   xlink:href="/assets/img/escaparate/basso_e2.jpg"
+   y="392.44214"
+   x="7450.4692"
+   style="overflow:visible"
+   width="156"
+   height="140"
+   id="image124" />
+<image
+   xlink:href="/assets/img/escaparate/pixelware_e2.jpg"
+   y="49.673439"
+   x="7599.5063"
+   style="overflow:visible"
+   width="155"
+   height="120"
+   id="image218" />
+<image
+   xlink:href="/assets/img/escaparate/metro_02.jpg"
+   y="278.42545"
    x="7640.3774"
-   y="278.42545" />
+   style="overflow:visible"
+   width="106.299"
+   height="150.66"
+   id="image196" />
 <a
    id="a4283"
    xlink:href="/leandro-katz"
@@ -1509,46 +1412,41 @@
    points="6389.5,130.5 6387.5,232.5 6538.5,232.5 6538.5,134.5 " />
 </a>
 <image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/el-poder-del-arte.jpg"
-   xlink:href="img/escaparate/el-poder-del-arte.jpg"
-   width="84.333511"
-   height="126.50027"
-   preserveAspectRatio="none"
-   id="image5008"
+   xlink:href="/assets/img/escaparate/el-poder-del-arte.jpg"
+   y="265.37054"
    x="233.33588"
-   y="265.37054" /><image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/dorothea-tanning.jpg"
-   xlink:href="img/escaparate/dorothea-tanning.jpg"
-   width="108.67476"
-   height="137.56299"
+   id="image5008"
    preserveAspectRatio="none"
-   id="image5019"
+   height="126.50027"
+   width="84.333511" /><image
+   xlink:href="/assets/img/escaparate/dorothea-tanning.jpg"
+   y="33.197433"
    x="293.18979"
-   y="33.197433" /><image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/lee-lozano.jpg"
-   xlink:href="img/escaparate/lee-lozano.jpg"
-   width="135.89035"
-   height="169.86292"
+   id="image5019"
    preserveAspectRatio="none"
-   id="image5030"
+   height="137.56299"
+   width="108.67476" /><image
+   xlink:href="/assets/img/escaparate/lee-lozano.jpg"
+   y="158.35971"
    x="467.02261"
-   y="158.35971" /><image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/img-5.jpg"
-   xlink:href="img/escaparate/img-5.jpg"
-   width="112.87029"
-   height="145.11891"
+   id="image5030"
    preserveAspectRatio="none"
-   id="image5041"
+   height="169.86292"
+   width="135.89035" /><image
+   xlink:href="/assets/img/escaparate/img-5.jpg"
+   y="371.59692"
    x="33.847713"
-   y="371.59692" /><image
-   sodipodi:absref="/home/pichiruli/Documents/desarrollo/webs/elvivero/assets/img/escaparate/cine-por-mujeres.jpg"
-   xlink:href="img/escaparate/cine-por-mujeres.jpg"
-   width="81.235115"
-   height="48.139328"
+   id="image5041"
    preserveAspectRatio="none"
-   id="image5052"
+   height="145.11891"
+   width="112.87029" /><image
+   xlink:href="/assets/img/escaparate/cine-por-mujeres.jpg"
+   y="413.02112"
    x="682.56085"
-   y="421.02112" /><a
+   id="image5052"
+   preserveAspectRatio="none"
+   height="48.139328"
+   width="81.235115" /><a
    transform="matrix(0.57574233,0,0,1.5211814,196.26491,1.7813889)"
    xlink:href="/el-poder-del-arte"
    id="a4954-3"
