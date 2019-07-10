@@ -133,11 +133,11 @@ header{
 .description{
 	z-index: 10;
 	font-family: arial;
-	font-size:13px;
+	font-size: 13px;
 	position: fixed;
 	padding-left: 25px;
 	width: 95vw;
-	line-height:1.3;
+	line-height: 1.3;
   h6{
   	display:inline;
 	  font-weight:normal;
@@ -306,13 +306,3 @@ html.touch .scroll{ display: none;}
 // Scroll end
 
 
-@media screen and (max-height: 250px) {
-  header{display:none;}
-  .description{display:none;}
-	.content{
-		height: 100vh;
-		.fix535, img, iframe{
-			height: 100vh !important;
-		}
-	}
-} 
