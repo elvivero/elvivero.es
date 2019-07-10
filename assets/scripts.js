@@ -1,3 +1,24 @@
+// Temporal fix, reload
+var time = new Date();
+time.setMinutes(time.getMinutes() + 30); //one day from now
+var values = localStorage.getItem(0);
+if(values == null){
+  $("body, *").css("display","none");
+  try {
+      localStorage.setItem(0, time);
+  } 
+  catch (e) { }
+  $( function() {
+    console.log("reloaded");
+    location.reload();
+  });
+}
+
+if (values[1] < new Date()) {
+    localStorage.removeItem(0);
+}
+
+
 /* Contact */
 function displaycontact() {
   $( "#contact" ).css("top","60px");
@@ -141,24 +162,3 @@ $( window ).scroll( onscroll );
 setInterval(onscroll, 300);
 setInterval(load_scrollbars, 300);
 
-console.log(localStorage.getItem(0));
-//add data we are interested in tracking to an array
-var values = new Array();
-var oneday = new Date();
-oneday.setMinutes(oneday.getMinutes() + 30); //one day from now
-values.push(true);
-values.push(oneday);
-if(null == localStorage.getItem(0)){
-  try {
-      localStorage.setItem(0, values.join(";"));
-  } 
-  catch (e) { }
-  location.reload();
-}
-console.log(localStorage.getItem(0));
-
-//check if past expiration date
-var values = localStorage.getItem(0).split(";");
-if (values[1] < new Date()) {
-    localStorage.removeItem(0);
-}
