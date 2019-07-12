@@ -6,7 +6,7 @@ var value = localStorage.getItem(0);
 if(value == null){
   $("body, *").css("display","none");
   try {
-      localStorage.setItem(0, time);
+      setTimeout(localStorage.setItem(0, time), 1800);
   } 
   catch (e) { }
   $( function() {
