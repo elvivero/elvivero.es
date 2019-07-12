@@ -1,8 +1,9 @@
 // Temporal fix, reload
 var time = new Date();
-time.setMinutes(time.getMinutes() + 30); //one day from now
-var values = localStorage.getItem(0);
-if(values == null){
+time.setMinutes(time.getMinutes() + 30);
+var value = localStorage.getItem(0);
+
+if(value == null){
   $("body, *").css("display","none");
   try {
       localStorage.setItem(0, time);
@@ -13,8 +14,7 @@ if(values == null){
     location.reload();
   });
 }
-
-if (values[1] < new Date()) {
+else if (value < new Date()) {
     localStorage.removeItem(0);
 }
 
