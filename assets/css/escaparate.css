@@ -1,0 +1,70 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+object{
+  margin-left: -22px;
+  height:100%;
+}
+
+
+#content{
+  height:525px;
+}
+
+#description{
+  color: #757575;
+  font-size:13px;
+  height:25px !important;
+}
+
+#description a{
+  color: #757575  !important;
+}
+
+#description  a:hover{
+  color: white !important;
+}
+
+#tenyears{
+  color: #757575;
+  font-size:13px;
+  -webkit-animation: animation 2s; /* Chrome, Safari, Opera */
+  animation: animation 2s;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes animation {
+  from {color: #757575;}
+  to {color: white;}
+}
+
+/* Standard syntax */
+@keyframes animation {
+  from {color: #757575;}
+  to {color: white;}
+}
+
+@media screen and (max-height: 550px){  
+#content{
+height: 350px;
+}
+object{
+margin-left: -14px;
+}
+}
+
+@media screen and (max-height: 670px) and (min-height: 550px) {  
+#content{
+height: 435px;
+}
+object{
+margin-left: -17px;
+}
+}

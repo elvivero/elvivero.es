@@ -5,8 +5,6 @@ title: "El vivero"
 {% assign month = site.time | date: '%m' %}{% if month == "12" %}{% assign year = site.time | date: '%Y' | plus: 1 %}{% else %}{% assign year = site.time | date: '%Y' %}{% endif %}
 <div id="content" class="content">
 {% include escaparate-new.html %}
-<div id="leftscroll" class="scroll" onclick='hidecontact()'></div>
-<div id="rightscroll" class="scroll" onclick='hidecontact()'></div>
 </div>
 <div id="description" class="description">
   © El vivero <span style="font-size: 12px">2004–{{ year }}.</span>

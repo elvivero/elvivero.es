@@ -1,0 +1,224 @@
+/* General*/
+*{margin:0px; padding:0px; font-size: 15px;}
+body{font-family:Arial; color:black; padding:25px; overflow-y:hidden;}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(0,0,0,0);
+}
+
+*::-webkit-scrollbar
+{
+  width: 10px;
+  height: 20px;
+}
+
+*::-webkit-scrollbar-thumb
+{
+  background-color: #333;  
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+a:hover{color:white;background:black; cursor:pointer;}
+#back{
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  visibility: hidden;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: white;
+  opacity: 0;
+}
+
+.scroll {
+    position: fixed;
+    top: -500px;
+    width: 24px;
+    height: 43px;
+    z-index: 4;
+    background-color: red;
+    cursor:pointer;
+  }
+
+#rightscroll {
+    right: 27px;
+    background: url(/assets/img/icons/right.svg);
+}
+
+#leftscroll {
+    left: 27px;
+    background: url(/assets/img/icons/left.svg);
+}
+
+.selected{ color:white; background:black;}
+
+/* Header*/
+header{
+  position:fixed;
+  z-index:1;
+}
+#homebutton{
+  font-weight:bold;
+}
+header section{
+  display:inline;
+  margin-right: 0.75em;
+}
+
+/* windows */
+#selector, #contact{
+  visibility:hidden;
+  z-index:3;
+  position:fixed;
+  padding:10px;
+  border: 1px solid rgb(170,170,170);
+  background: white;
+  font-size: 13px;
+  -webkit-transition: opacity 0.5 ease-in-out;
+  -moz-transition: opacity 0.5 ease-in-out;
+  -o-transition: opacity 0.5 ease-in-out;
+  transition: opacity 0.5 ease-in-out;
+}
+
+/* Project selector */
+#selector{
+  top: 60px;
+  left: 95px;
+  width: 240px;
+  height: calc(100% - 105px);
+  overflow-y: scroll;
+}
+#selector li{
+  list-style:none;
+  margin-bottom:4px;
+  margin-left: 0px;
+}
+#selector li.section {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  font-weight: bold;
+}
+#selector li.section:first-child{
+  margin-top: 0px;
+}
+#selector li:last-child{
+  margin-bottom: 15px;
+}
+#selector hr{
+  border: 0;
+  height: 1px;
+  background: black;
+  margin-top: 1em;
+}
+
+/* Contact */
+#contact{
+  width: 155px;
+  height: 180px;
+  left: 233px;
+  top:60px;
+  margin: auto;
+  padding-top: 15px;
+  line-height: 1.2em;
+}
+#contact a:hover{
+  cursor:pointer;
+}
+#contact .icon{
+  margin-right: 3px !important;
+  background: transparent !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+#contact .icon:hover{
+  background: transparent !important;
+}
+#contact span a img {
+  margin-right: 3px !important;
+  width: 15px !important;
+  height: 15px !important;
+}
+#contact .social{
+  margin-top: 5px;
+}
+#contact .close img{
+  position:absolute;
+  width: 20px;
+  height: 20px;
+  margin-right: 0px !important;
+  right: 7px;
+  top: 5px;
+}
+
+#issuu{
+  margin-left: 15px !important;
+}
+
+/* Content */
+#content{
+  padding:0px;
+  height:calc(100vh - 165px);
+  padding-bottom:20px;
+  position:relative;
+  white-space: nowrap;
+  top:35px;
+}
+
+#content img, #content iframe{
+  margin-right:5px;
+  height:100%;
+}
+
+#content .fix535 {
+  max-height:535px;
+}
+
+#content img:last-child{
+  padding-right: 25px !important;
+}
+#content  .espacio60{ margin-right: 60px; }
+#content  .espacio55{ margin-right: 55px; }
+#content  .espacio50{ margin-right: 50px; }
+#content  .espacio45{ margin-right: 45px; }
+#content  .espacio40{ margin-right: 40px; }
+#content  .espacio35{ margin-right: 35px; }
+#content  .espacio30{ margin-right: 30px; }
+#content  .espacio25{ margin-right: 25px; }
+#content  .espacio20{ margin-right: 20px; }
+#content  .espacio15{ margin-right: 15px; }
+#content  .espacio10{ margin-right: 10px; }
+#content  .espacio5 { margin-right:  5px; }
+#description{
+  position:fixed;
+  left:30px;
+  margin-top:40px;
+  width:calc(100vw - 60px);
+  height:72px;
+}
+#description * {display:inline;}
+
+@media only screen and (max-width: 295px) {
+  header section{
+    margin-right:2px;
+  }
+  header section a{
+    font-size:13px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  #selector{
+    left: 25px;
+    width: calc(100vw - 70px);
+  }
+}
+@media only screen and (max-width: 425px) {
+  #contact{
+    left:auto;
+    right:25px;
+  }
+}
