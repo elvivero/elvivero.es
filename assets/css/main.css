@@ -42,6 +42,7 @@ a:hover{color:white;background:black; cursor:pointer;}
     z-index: 4;
     background-color: red;
     cursor:pointer;
+    visibility:hidden;
   }
 
 #rightscroll {

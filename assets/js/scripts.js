@@ -79,7 +79,7 @@ window.onmousemove = function (){
 
 function isTouchDevice(){return 'ontouchstart' in document.documentElement;}
 
-/* function update_arrows(scroll,docwidth) {
+ function update_arrows(scroll,docwidth) {
   if (isTouchDevice()){
     $( "#leftscroll" ).css( "visibility", "hidden" );
     $( "#rightscroll" ).css( "visibility", "hidden" );
@@ -97,7 +97,7 @@ function isTouchDevice(){return 'ontouchstart' in document.documentElement;}
     }
   }
 }
-*/
+
 // Arrows vertical responsive
 function arrows_position(){
     let content = $("#content").height();
@@ -108,9 +108,12 @@ function arrows_position(){
 
 
 function onScroll() {
-//  update_arrows(scroll, docwidth);
+$(function() {
+  let scroll = $(window).scrollLeft();
+  let docwidth = $(document).width() - $(window).width();
+  update_arrows(scroll, docwidth);
    arrows_position();
-//  update_favicon(scroll, docwidth);
+});
   responsive();
 }
 $(window).on("resize",onScroll());
