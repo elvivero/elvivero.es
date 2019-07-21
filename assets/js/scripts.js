@@ -1,119 +1,85 @@
-// Temporal fix, reload
-var time = new Date();
-time.setMinutes(time.getMinutes() + 30);
-var value = localStorage.getItem(0);
-
-if(value == null){
-  $("body, *").css("display","none");
-  try {
-      setTimeout(localStorage.setItem(0, time), 1800);
-  } 
-  catch (e) { }
-  $( function() {
-    console.log("reloaded");
-    location.reload();
-  });
-}
-else if (value < new Date()) {
-    localStorage.removeItem(0);
-}
-
-
 /* Contact */
 function displaycontact() {
-  $( "#contact" ).css("top","60px");
-  $( "#back" ).css( "visibility", "visible");
+  document.getElementById("contact").style.visibility = "visible";
+  document.getElementById("back").style.visibility = "visible";
+  document.querySelector("#contact-link a").classList.add("selected");
 }
 function hidecontact() {
-  $( "#contact" ).css("top","-500px");
-  $( "#contact-link a" ).css( "color", "black");
-  $( "#contact-link a" ).css( "background", "transparent");
+  document.getElementById("contact").style.visibility = "hidden";
+  document.getElementById("back").style.visibility = "hidden";
+  document.querySelector("#contact-link a").classList.remove("selected");
 }
 
-/* Select Menu */
-function SelectRedirect() {
-  var selects = document.getElementById( "selectormenu" );
-  var selectedValue = selects.options[ selects.selectedIndex ].value;
-  var element = document.getElementById( "mySelect" );
-  if ( selectedValue != "" ) {
-    window.location = selectedValue;
-  }
-}
 function displaySelector() {
-  $( "#selector" ).css( "left", "95px" );
-  $( "#back" ).css( "visibility", "visible" );
+  document.getElementById("selector").style.visibility = "visible";
+  document.getElementById("back").style.visibility = "visible";
+  document.querySelector("#project-link a").classList.add("selected");
+  scrollConverter.deactivate();
 }
+
 function hideSelector() {
-  $( "#selector" ).css( "left", "-500px" );
-  $( "#back" ).css( "visibility", "hidden" );
+  document.getElementById("selector").style.visibility = "hidden";
+  document.getElementById("back").style.visibility = "hidden";
+  document.querySelector("#project-link a").classList.remove("selected");
+  scrollConverter.activate();
 }
+
 
 // No drag!
-$( "body" ).css( "display", "none" );
 window.ondragstart = function() {
   return false;
 };
+function responsive(){
+  /*
+  let n = $(window).height() - 165;
+  $( "#content img" ).each( function() {
+    let img = $(this);
+    $(this).height(n);
+  });
+  */
 
-let scrollBody = null; let scrollSelector = null;
-function load_scrollbars(){
-  scrollBody     = $("body").overlayScrollbars({overflowBehavior:{x:"scroll",y:"hidden"}}).overlayScrollbars();
-  scrollSelector = $("#selector").overlayScrollbars({}).overlayScrollbars();
-}
-
-function iframe_responsive(){
   $( "iframe" ).each( function() {
     let el = $( this );
-    let p = el.attr( "width" ) / el.attr( "height" );
-    el.width( p * el.height() );
-    $( window ).resize( function() {
-      el.width( p * el.height() );
-    } );
-  } );
-}
-$( function() {
-  // Scrollbars loading
-  load_scrollbars();
-  // Lazy loading
-  let images = document.querySelectorAll("#content img");
-  new LazyLoad(images, {
-     root: "body",
-     threshold: 500
+    let prop;
+    if (typeof el.attr("prop") !== 'undefined'){
+      prop = el.attr("prop");
+    }
+    else{
+      prop = Math.round(el.attr( "width" ) / el.attr( "height" )*1000)/1000;
+      el.attr("prop",prop);
+    }
+    let n = el.height() * prop;
+    if(n != el.width()){
+      el.width(n);
+    }
   });
-  // Iframe responsive
-  iframe_responsive();
-} );
+}
 
 // Arrows scroll control
 function xscroll(dir){
-  let inst = $("body").overlayScrollbars();
   let delta = 200;
+  let amount;
   if(dir=="left"){
     amount = -$(window).width()+delta;
   }
   else if (dir=="right") {
     amount = $(window).width()-delta;
   }
-  let end = inst.scroll().x.position + amount;
-  inst.scroll({x: end}, 400);
-
+  window.scrollBy(amount, 0);
 }
-
-$(document).keydown(function(e) {
-  let key = e.which;
-  if ( key == 37 || key == 38 ){
-    xscroll("left");
-  }
-  if ( key == 39 || key == 40 ){
-    xscroll("right");
-  }
-  e.preventDefault();
-});
-
-function isTouchDevice() {
-    return 'ontouchstart' in document.documentElement;
+/*
+window.onmousemove = function (){
+  let m = 10;
+  let x = window.event.clientX;
+  let w = window.innerWidth;
+  let bw = document.body.scrollWidth;
+  window.scroll(x/w*bw,0);
 }
+*/
 
-function update_arrows(scroll,docwidth) {
+function isTouchDevice(){return 'ontouchstart' in document.documentElement;}
+
+ function update_arrows(scroll,docwidth) {
   if (isTouchDevice()){
     $( "#leftscroll" ).css( "visibility", "hidden" );
     $( "#rightscroll" ).css( "visibility", "hidden" );
@@ -134,31 +100,23 @@ function update_arrows(scroll,docwidth) {
 
 // Arrows vertical responsive
 function arrows_position(){
-    let content = $(".content").height();
+    let content = $("#content").height();
     let scroll_height = 43;
     let position = content/2 + 65 - scroll_height/2;
     $(".scroll").css("top",position+"px");
+} 
 
-}
 
-function update_favicon(scroll, docwidth){
-  let f = $( "#favicon" );
-  if ( $( document ).width() > $( window ).width() ) {
-    var n = Math.round( scroll / ( docwidth / 4 ) );
-    f.attr( "href", "/assets/img/icons/favicon" + ( n + 1  ) + ".png" );
-  }
-}
-
-function onscroll() {
-  let scroll = scrollBody.scroll().x.position;
-  let docwidth = scrollBody.scroll().x.max;
+function onScroll() {
+$(function() {
+  let scroll = $(window).scrollLeft();
+  let docwidth = $(document).width() - $(window).width();
   update_arrows(scroll, docwidth);
-  arrows_position();
-  update_favicon(scroll, docwidth);
-  iframe_responsive();
+   arrows_position();
+});
+  responsive();
 }
-
-$( window ).scroll( onscroll );
-setInterval(onscroll, 300);
-setInterval(load_scrollbars, 300);
-
+$(window).on("resize",onScroll());
+$(window).on("scroll",onScroll());
+setInterval(onScroll, 300);
+scrollConverter.activate();
