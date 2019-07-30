@@ -8,19 +8,12 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css">
     {% if page.title == "El vivero" %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/escaparate.css">{% endif %}
     {% if page.layout == "post_old" %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post_old.css">{% else %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/post_new.css">{% endif %}
-   {% if page.title == "El vivero" %}<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/escaparate.css">{% endif %}
-<!--
-    <script src="{{ site.baseurl }}/assets/js/jquery-3.2.1.min.js"></script>
-
-    <!--<script src="{{ site.baseurl }}/assets/js/lazyload.min.js"></script>-->
-    <script src="{{ site.baseurl }}/assets/js/scroll-converter.min.js"></script>
-    <!--<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/OverlayScrollbars.css">
-    <script src="{{ site.baseurl }}/assets/js/jquery.overlayScrollbars.min.js"></script>
-    -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
     <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
-    {% if page.style %}<style type="text/css">
+    {% if page.style %}
+    <style type="text/css">
      {{ page.style }}
-     </style>{% endif %}
+     </style>
+     {% endif %}
     {% seo %}
 </head>

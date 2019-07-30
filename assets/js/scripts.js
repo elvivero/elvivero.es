@@ -24,20 +24,8 @@ function hideSelector() {
   scrollConverter.activate();
 }
 
-
-// No drag!
-window.ondragstart = function() {
-  return false;
-};
+/* Responsive */
 function responsive(){
-  /*
-  let n = $(window).height() - 165;
-  $( "#content img" ).each( function() {
-    let img = $(this);
-    $(this).height(n);
-  });
-  */
-
   $( "iframe" ).each( function() {
     let el = $( this );
     let prop;
@@ -55,7 +43,7 @@ function responsive(){
   });
 }
 
-// Arrows scroll control
+// Scroll control
 function xscroll(dir){
   let delta = 200;
   let amount;
@@ -65,21 +53,14 @@ function xscroll(dir){
   else if (dir=="right") {
     amount = $(window).width()-delta;
   }
-  window.scrollBy(amount, 0);
+  let pos = $(window).scrollLeft();
+  $('html, body').animate({scrollLeft: pos + amount,},350,'linear');
 }
-/*
-window.onmousemove = function (){
-  let m = 10;
-  let x = window.event.clientX;
-  let w = window.innerWidth;
-  let bw = document.body.scrollWidth;
-  window.scroll(x/w*bw,0);
-}
-*/
 
 function isTouchDevice(){return 'ontouchstart' in document.documentElement;}
 
- function update_arrows(scroll,docwidth) {
+// Arrows visibility control
+function update_arrows(scroll,docwidth) {
   if (isTouchDevice()){
     $( "#leftscroll" ).css( "visibility", "hidden" );
     $( "#rightscroll" ).css( "visibility", "hidden" );
@@ -119,4 +100,7 @@ $(function() {
 $(window).on("resize",onScroll());
 $(window).on("scroll",onScroll());
 setInterval(onScroll, 300);
-scrollConverter.activate();
+//scrollConverter.activate();
+
+// No drag!
+window.ondragstart = function() { return false;};
