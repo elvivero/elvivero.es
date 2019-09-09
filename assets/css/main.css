@@ -175,7 +175,10 @@ header section{
   height:100%;
 }
 
-#content img.small{height:50%;}
+#content img.small{ vertical-align:top; }
+#content img.small70{height:70%;}
+#content img.small50{height:50%;}
+#content img.small33{height:33.3%;}
 
 #content .fix535 {
   max-height:535px;
