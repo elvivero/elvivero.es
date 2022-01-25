@@ -18,4 +18,17 @@ readme_index:
   remove_originals: true
 
 permalink: /:title/
-exclude: [README.md, escaparate.command, notes.md, CNAME, run.sh, todo.md, Gemfile, Gemfile.lock, _posts/2018-01-01-template.html, translate-links.txt]
+exclude: 
+  - README.md
+  - escaparate.command
+  - notes.md
+  - CNAME
+  - run.sh
+  - todo.md
+  - Gemfile
+  - Gemfile.lock
+  - _posts/2018-01-01-template.html
+  - translate-links.txt
+  - default.nix
+  - Makefile
+  - gemset.nix
