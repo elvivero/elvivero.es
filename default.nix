@@ -12,8 +12,8 @@ in
     name = "elvivero.es";
     buildInputs = [ jekyll_env bundler ruby ];
 
-    shellHook = ''
-      exec ${jekyll_env}/bin/jekyll serve --watch
-    '';
+    # shellHook = ''
+    #   exec ${jekyll_env}/bin/jekyll serve --watch
+    # '';
   }
 
