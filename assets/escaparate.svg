@@ -30,9 +30,9 @@
    inkscape:window-height="1418"
    id="namedview246"
    showgrid="false"
-   inkscape:zoom="0.11595872"
-   inkscape:cx="4928.4782"
-   inkscape:cy="1039.1629"
+   inkscape:zoom="1.3119232"
+   inkscape:cx="346.8191"
+   inkscape:cy="201.61242"
    inkscape:window-x="0"
    inkscape:window-y="22"
    inkscape:window-maximized="0"
@@ -40,10 +40,7 @@
    inkscape:pagecheckerboard="0"
    width="7981px"
    showguides="true"
-   inkscape:guide-bbox="true"><sodipodi:guide
-     position="-78.291311,814.23311"
-     orientation="1,0"
-     id="guide1447" /></sodipodi:namedview><metadata
+   inkscape:guide-bbox="true" /><metadata
    id="metadata248"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
@@ -1535,17 +1532,17 @@
    width="124.82628"
    height="99.841797"
    preserveAspectRatio="none"
-   xlink:href="img/escaparate/programas-musicales-B.png"
+   xlink:href="img/escaparate/programas-musicales.png"
    id="image1419"
-   x="24.855742"
-   y="417.12601" /><image
+   x="28.855742"
+   y="405.12601" /><image
    width="130.11855"
    height="95.544189"
    preserveAspectRatio="none"
    xlink:href="img/escaparate/fullaondo.jpg"
    id="image1946"
    x="74.425064"
-   y="246.04636" /><a
+   y="240.04636" /><a
    id="a1149"
    xlink:href="/tout-va-bien"
    transform="matrix(0.74305994,0,0,1.7053579,-35.70314,-294.55887)"
@@ -1560,7 +1557,7 @@
 </a><a
    id="a1153"
    xlink:href="/fullaondo"
-   transform="matrix(1.0753599,0,0,1.3088245,-8.9153217,12.42118)"
+   transform="matrix(1.0753599,0,0,1.3088245,-8.9153217,6.42118)"
    target="_top">
 <rect
    x="77.5"
@@ -1569,16 +1566,15 @@
    height="73"
    id="rect1151"
    style="opacity:0;fill:#00ffff" />
-</a><a
-   id="a1157"
+</a>
+<a
    xlink:href="/programas-musicales"
-   transform="matrix(1.0316221,0,0,1.3676959,-55.09497,172.99229)"
-   target="_top">
-<rect
-   x="77.5"
-   y="178.5"
-   width="121"
-   height="73"
-   id="rect1155"
-   style="opacity:0;fill:#00ffff" />
-</a></svg>
+   target="_top"
+   id="a254"
+   transform="translate(4,-12)">
+<path
+   style="opacity:0;fill:#00ffff"
+   d="m 30.992823,504.38497 -6.928158,-15.97735 1.494798,-16.67643 20.466706,-24.53623 6.741151,-17.18926 11.315986,-6.13389 5.331945,0.89472 6.76297,-7.385 13.601425,3.31182 3.630502,-4.64141 17.135182,6.01817 9.06343,-3.38827 7.91641,8.46356 10.1826,0.8445 0.3293,9.30033 11.71729,8.60295 -6.5e-4,14.38597 -9.01752,31.69845 -6.60753,8.73597 -10.54482,-2.4709 -6.75381,-4.54659 -0.21872,-16.02594 -15.11085,4.69486 -6.071893,6.81083 -0.09558,30.60205 h -8.965669 v -30.46581 l -10.129743,-8.18618 -5.945612,6.85322 1.819915,9.70563 -13.8771,15.12949 -9.170441,1.77716 -5.909923,-3.77965 -2.682279,-6.54333 z"
+   id="path2281" />
+</a>
+   </svg>
