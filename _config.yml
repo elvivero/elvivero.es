@@ -11,7 +11,10 @@ sass:
     sass_dir: _sass
     style: compressed
 
-plugins: [jekyll-paginate, jekyll-sitemap, jekyll-seo-tag, jekyll-readme-index]
+plugins: 
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 readme_index:
   enabled:          true
