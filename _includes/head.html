@@ -15,9 +15,9 @@
     <script src="{{ site.baseurl }}/assets/js/scripts.js"></script>
     {% if page.style %}
     <style type="text/css">
-{{ page.style }}
-    </style>
-    {% endif %}
-    {% seo %}
+     {{ page.style }}
+     </style>
+     {% endif %}
+    {% seo title=false %}
     {% include matomo.html %}
 </head>

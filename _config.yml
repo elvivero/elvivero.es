@@ -1,6 +1,11 @@
-title: "El vivero"
-author: "El vivero"
-description: ""
+title: El vivero
+author: El vivero
+social:
+  name: El vivero
+  links: 
+    - https://www.instagram.com/elviverodesign/
+    - https://www.linkedin.com/company/el-vivero/
+description: "El vivero design studio began as the partnership between Leandro Lattes and Florencia Grassi in 2004. Based in Madrid, we collaborate with major cultural, art, science and tourism organizations, as well as many other clients in Spain and abroad."
 url: "https://elvivero.es"
 baseurl: ""
 lang: "en"
