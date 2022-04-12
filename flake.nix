@@ -13,6 +13,7 @@
         lockfile = ./Gemfile.lock;
         gemset = ./gemset.nix;
       }) {};
+
       elvivero-web = final.callPackage ({ stdenv, elvivero-env, bundler, ruby, nodejs }: stdenv.mkDerivation {
         name = "elvivero";
         src = ./.;
@@ -69,38 +70,30 @@
   } // utils.lib.eachDefaultSystem (system:
   let
     pkgs = import nixpkgs { inherit system; overlays = [self.overlay]; };
-    serve = pkgs.writeShellScriptBin "serve" ''
-      export PATH="${pkgs.nodejs}/bin:$PATH"
-      ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
-    '';
-    serve-prod = pkgs.writeShellScriptBin "serve-prod" ''
-      export PATH="${pkgs.nodejs}/bin:$PATH"
-      JEKYLL_ENV=production ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
-    '';
-    # push = pkgs.writeShellScriptBin "push" ''
-    #   export PATH="${pkgs.nodejs}/bin:$PATH"
-    #   ${pkgs.rsync}/bin/rsync -aPv ${pkgs.elvivero-web}/www/ lambda:/var/www/elvivero.es/
-    # '';
+    mkAppScript = name: script: {
+      type = "app";
+      program = "${pkgs.writeShellScriptBin name script}/bin/${name}";
+    };
   in
   rec {
     packages.elvivero-web= pkgs.elvivero-web;
     packages.elvivero-env = pkgs.elvivero-env;
     defaultPackage = packages.elvivero-web;
 
-    apps.serve = {
-      type = "app";
-      program = "${serve}/bin/serve";
-    };
+    apps.serve = mkAppScript "serve" ''
+      export PATH="${pkgs.nodejs}/bin:$PATH"
+      ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
+    '';
 
-    apps.serve-prod = {
-      type = "app";
-      program = "${serve-prod}/bin/serve-prod";
-    };
+    apps.serve-prod = mkAppScript "serve-prod" ''
+      export PATH="${pkgs.nodejs}/bin:$PATH"
+      JEKYLL_ENV=production ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
+    '';
 
-    # apps.push = {
-    #   type = "app";
-    #   program = "${push}/bin/push";
-    # };
+    apps.push = mkAppScript "push" ''
+      export PATH="${pkgs.nodejs}/bin:$PATH"
+      ${pkgs.rsync}/bin/rsync -aPv ${pkgs.elvivero-web}/www/ lambda:/var/www/elvivero.es/
+    '';
 
     defaultApp = apps.serve;
 
