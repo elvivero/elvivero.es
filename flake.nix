@@ -27,27 +27,6 @@
       }) {};
     };
 
-  } // utils.lib.eachDefaultSystem (system:
-  let
-    pkgs = import nixpkgs { inherit system; overlays = [self.overlay]; };
-    serve = pkgs.writeShellScriptBin "serve" ''
-      export PATH="${pkgs.nodejs}/bin:$PATH"
-      ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
-    '';
-    serve-prod = pkgs.writeShellScriptBin "serve-prod" ''
-      export PATH="${pkgs.nodejs}/bin:$PATH"
-      JEKYLL_ENV=production ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
-    '';
-    # push = pkgs.writeShellScriptBin "push" ''
-    #   export PATH="${pkgs.nodejs}/bin:$PATH"
-    #   ${pkgs.rsync}/bin/rsync -aPv ${pkgs.elvivero-web}/www/ lambda:/var/www/elvivero.es/
-    # '';
-  in
-  rec {
-    packages.elvivero-web= pkgs.elvivero-web;
-    packages.elvivero-env = pkgs.elvivero-env;
-    defaultPackage = packages.elvivero-web;
-
     nixosModule = { config, lib, pkgs, ... }: let
       cfg = config.webserver.elvivero;
     in {
@@ -84,9 +63,29 @@
             };
           };
         };
-
       };
     };
+
+  } // utils.lib.eachDefaultSystem (system:
+  let
+    pkgs = import nixpkgs { inherit system; overlays = [self.overlay]; };
+    serve = pkgs.writeShellScriptBin "serve" ''
+      export PATH="${pkgs.nodejs}/bin:$PATH"
+      ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
+    '';
+    serve-prod = pkgs.writeShellScriptBin "serve-prod" ''
+      export PATH="${pkgs.nodejs}/bin:$PATH"
+      JEKYLL_ENV=production ${pkgs.elvivero-env}/bin/bundle exec jekyll serve --watch --incremental --livereload
+    '';
+    # push = pkgs.writeShellScriptBin "push" ''
+    #   export PATH="${pkgs.nodejs}/bin:$PATH"
+    #   ${pkgs.rsync}/bin/rsync -aPv ${pkgs.elvivero-web}/www/ lambda:/var/www/elvivero.es/
+    # '';
+  in
+  rec {
+    packages.elvivero-web= pkgs.elvivero-web;
+    packages.elvivero-env = pkgs.elvivero-env;
+    defaultPackage = packages.elvivero-web;
 
     apps.serve = {
       type = "app";
