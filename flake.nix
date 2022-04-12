@@ -28,45 +28,6 @@
       }) {};
     };
 
-    nixosModule = { config, lib, pkgs, ... }: let
-      cfg = config.webserver.elvivero;
-    in {
-      options.webserver.elvivero = with lib; {
-        enable = mkEnableOption "elvivero.es web server";
-        cloudflareCredentialsFile = mkOption {
-          type = types.path;
-          description = "Cloudflare credentials file.";
-        };
-      };
-      config = lib.mkIf cfg.enable {
-        security.acme.certs."elvivero.es" = {
-          dnsProvider = "cloudflare";
-          credentialsFile = cfg.cloudflareCredentialsFile;
-          group = "nginx";
-        };
-        services = {
-          nginx.virtualHosts = {
-            "elvivero.es" = {
-              useACMEHost = "elvivero.es";
-              forceSSL = true;
-              root = "${pkgs.elvivero-web}/www/";
-              extraConfig = ''
-                expires 1d;
-                error_page 404 /404.html;
-                error_log syslog:server=unix:/dev/log debug;
-                access_log syslog:server=unix:/dev/log,tag=elvivero;
-              '';
-            };
-            "www.elvivero.es" = {
-              useACMEHost = "elvivero.es";
-              forceSSL = true;
-              locations."/".return = "301 https://elvivero.es$request_uri";
-            };
-          };
-        };
-      };
-    };
-
   } // utils.lib.eachDefaultSystem (system:
   let
     pkgs = import nixpkgs { inherit system; overlays = [self.overlay]; };
