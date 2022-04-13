@@ -52,8 +52,7 @@
     '';
 
     apps.push = mkAppScript "push" ''
-      export PATH="${pkgs.nodejs}/bin:$PATH"
-      ${pkgs.rsync}/bin/rsync -aPv ${pkgs.elvivero-web}/www/ lambda:/var/www/elvivero.es/
+      ssh lambda "cd /etc/nixos && nix flake lock --update-input web-elvivero && git add flake.lock && git commit -m \"elvivero web update\""
     '';
 
     defaultApp = apps.serve;
