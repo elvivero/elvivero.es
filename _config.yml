@@ -40,3 +40,7 @@ exclude:
   - default.nix
   - Makefile
   - gemset.nix
+  - flake.lock
+  - flake.nix
+  - bundixfetch.sh
+  - todo.txt
